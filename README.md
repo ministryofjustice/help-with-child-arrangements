@@ -107,7 +107,7 @@ TODO **_: create a spec environment_**.
 This project provides an ephemeral, pre-production environment to develop locally. Rspec tests are configured and
 executed using the CI environment, via GitHub Actions.
 
-It is possible to run tests via `docker compose exec`. Please be sure to update both the RAILS_ENV and DATABASE_URL
+It is possible to run tests via `docker compose exec`. Please be sure to update both the `RAILS_ENV` and `DATABASE_URL`
 environment.
 
 ```bash
