@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# this block forces one-time setup on entry and a reinstall if environment changes
+if [ ! -f /app/.setup-complete ] || [ "$RAILS_ENV" != "$(cat /app/.setup-complete)" ]; then
+  printf '\e[33mINFO: Beginning setup\e[0m\n'
+  /app/bin/setup
+
+  # create a control file
+  echo "$RAILS_ENV" > /app/.setup-complete
+fi
+
+if [ "$RAILS_ENV" = 'development' ]; then
+  printf '\e[33mINFO: Starting asset-watch in the background\e[0m\n'
+  nohup yarn build --watch=forever &
+  nohup yarn build:css --watch &
+fi
+
+/etc/init.d/entrypoint-migrations.sh
+
+/etc/init.d/entrypoint-webapp.sh

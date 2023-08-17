@@ -1,0 +1,15 @@
+.nowrap {
+  white-space: nowrap;
+}
+
+.related-items {
+  padding-top: 10px;
+  border-top: 2px solid #1d70b8;
+}
+
+.button_to {
+  .govuk-back-link {
+    background: none;
+    border: none;
+  }
+}

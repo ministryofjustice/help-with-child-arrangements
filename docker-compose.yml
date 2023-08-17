@@ -1,0 +1,55 @@
+version: '3.8'
+
+volumes:
+  postgres-data:
+  gems:
+
+services:
+
+  app:
+    container_name: cait_app
+    environment:
+      VIRTUAL_HOST: "help-with-child-arrangements.docker"
+      VIRTUAL_PORT: "3000"
+      RAILS_ENV: "development"
+      DATABASE_URL: "postgres://postgres@db/child_arrangements"
+      HOST_DNS: "app"
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      target: dev
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    volumes:
+      - .:/app/
+      - gems:/usr/local/bundle
+
+  db:
+    container_name: cait_postgres
+    image: postgres:14
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+
+  db_admin:
+    container_name: cait_pgadmin4
+    image: dpage/pgadmin4:6.10
+    restart: always
+    ports:
+      - "5050:5050"
+    depends_on:
+      - db
+    environment:
+      VIRTUAL_HOST: "db.help-with-child-arrangements.docker"
+      VIRTUAL_PORT: 5050
+      PGADMIN_DEFAULT_EMAIL: cait@pgadmin.com
+      PGADMIN_DEFAULT_PASSWORD: let-me-in
+    links:
+      - db

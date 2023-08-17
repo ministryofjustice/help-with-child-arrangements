@@ -1,0 +1,39 @@
+/* Default govuk breakpoints */
+
+$breakpoints: (
+        govuk-medium: 640px,
+        govuk-large: 1020px,
+        kit-xsmall: 410px,
+        kit-small: 500px,
+        kit-medium: 740px,
+        kit-mlarge: 740px,
+        kit-large: 1080px,
+        kit-xlarge: 1280px
+) !default;
+
+@function translate-media-condition($c) {
+  $condMap: (
+          "screen": "only screen",
+          "print": "only print",
+          "retina": "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 120dpi)",
+          ">maxWidth": "(min-width: #{kit-xlarge + 1})",
+          "<maxWidth": "(max-width: #{kit-xlarge})",
+          ">bp1Width": "(min-width: #{kit-medium + 1})",
+          "<bp1Width": "(max-width: #{kit-medium})",
+          ">minWidth": "(min-width: #{kit-small + 1})",
+          "<minWidth": "(max-width: #{kit-small})"
+  );
+  @return map-get( $condMap, $c );
+}
+
+@mixin media($args...) {
+  $query: "";
+  @each $arg in $args {
+    $op: "";
+    @if ( $query != "" ) {
+      $op: " and ";
+    }
+    $query: $query + $op + translate-media-condition($arg);
+  }
+  @media #{$query}  { @content; }
+}

@@ -1,0 +1,23 @@
+<% content_for :page_title do %>
+  <%= t('page_title.search') %>
+<% end %>
+
+<%= govuk_back_link(href: "/", text: "Back") %>
+
+<h1 class="govuk-heading-xl">Search for unclaimed court money</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <%= form_for @search, url: search_results_path, method: :get, builder: GOVUKDesignSystemFormBuilder::FormBuilder do |f| %>
+      <%= f.govuk_error_summary %>
+
+      <p class="govuk-body">You can search using keyword and/or date. Entering specific information will improve the accuracy of your search results.</p>
+      <%= f.govuk_text_field :keywords, label: { size: "m" } %>
+      <%= f.govuk_fieldset legend: { text: 'Search a date range' } do %>
+        <%= f.govuk_date_field :date_from, legend: { size: "s" } %>
+        <%= f.govuk_date_field :date_to, legend: { size: "s" } %>
+        <%= f.govuk_submit "Search" %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
