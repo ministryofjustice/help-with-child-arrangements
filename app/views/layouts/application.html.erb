@@ -47,6 +47,7 @@
         <%= govuk_link_to("feedback", "#") %>
         will help us improve it.
       <% end %>
+      <%= govuk_breadcrumbs(breadcrumbs: [yield(:breadcrumbs).presence]) %>
       <main class="govuk-main-wrapper" id="main-content" role="main">
         <%= yield %>
       </main>
