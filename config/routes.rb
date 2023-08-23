@@ -15,15 +15,6 @@ Rails.application.routes.draw do
 
   resources :cases, param: :account_number, only: [:show]
 
-  namespace :admin do
-    get "/", to: "sessions#new"
-    post "/", to: "sessions#create", as: :login
-    delete "/logout", to: "sessions#destroy"
-
-    get "/upload", to: "uploads#new"
-    post "/upload", to: "uploads#create"
-  end
-
   get "/404", to: "errors#not_found"
   get "/500", to: "errors#internal_error"
 

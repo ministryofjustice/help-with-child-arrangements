@@ -1,0 +1,63 @@
+<% content_for :page_title do %>
+  <%= t('page_title.support') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.support') => false }) %>
+<% end %>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl"><%= t('page_title.support') %></h1>
+
+    <p class="govuk-body-lead">Emotional support can help you get through the stress of making child arrangements.</p>
+    <p class="govuk-body">You’re more likely to reach an agreement if you’re emotionally ready and know where to get
+      support if you need it.</p>
+    <section id="emotional-support-peers" class="SectionArea">
+      <h2 class="govuk-heading-l">Peer support</h2>
+      <p class="govuk-body">Your family and friends are likely to be the greatest source of support.</p>
+      <p class="govuk-body">You can also try using online forums or attending group meetings to speak with people who
+        have been through a similar experience.</p>
+      <section id="emotional-support-online" class="SectionArea">
+        <h3 class="govuk-heading-s">Use online forums</h3>
+        <p class="govuk-body">Online forums allow you to share your story, tell people how you’re feeling and discuss
+          any concerns you have.</p>
+        <p class="govuk-body">You can get advice from others by posting a question or sharing your story.</p>
+        <p class="govuk-body">The following are examples of helpful forums:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li><%= govuk_link_to 'Click', 'https://click.clickrelationships.org/home/parenting-apart/' %></li>
+          <li><%= govuk_link_to 'Dad.info', 'https://www.dad.info/forum/index' %></li>
+          <li><%= govuk_link_to 'Mumsnet', 'https://www.mumsnet.com/Talk' %></li>
+          <li><%= govuk_link_to 'Wikivorce', 'https://www.wikivorce.com/divorce/About-Us.html' %></li>
+          <li><%= govuk_link_to 'Gingerbread', 'https://www.gingerbread.org.uk/' %></li>
+        </ul>
+      </section>
+      <section id="emotional-support-offline" class="SectionArea">
+        <h3 class="govuk-heading-s">Find a group near you</h3>
+        <p class="govuk-body">Look for a
+          <%= govuk_link_to 'family meet-up group', 'https://www.meetup.com/find/parents-family/' %> or
+          <%= govuk_link_to 'single parents network', 'https://www.meetup.com/find/?allMeetups=false&keywords=single+parent+support&radius=50&userFreeform=London%2C+United+Kingdom&mcId=z1012717&mcName=London%2C+England%2C+GB&sort=default&eventFilter=mysugg' %>
+          in your area. Both work in the same way as forums but the focus is usually on meeting face to face.</p>
+      </section>
+    </section>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <section id="emotional-support-professional" class="SectionArea">
+      <h2 class="SectionArea__heading govuk-heading-l moj-Section">Professional advice</h2>
+      <p class="govuk-body moj-Section">
+        You should consider professional advice (for example seeing a counsellor or attending meetings) if you feel you’re struggling to cope.
+      </p>
+
+      <section id="emotional-support-counselling" class="SectionArea">
+
+      </section>
+
+      <section id="emotional-support-spip" class="SectionArea">
+
+      </section>
+    </section>
+  </div>
+</div>
