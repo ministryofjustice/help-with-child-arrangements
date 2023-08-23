@@ -3,6 +3,7 @@ $govuk-new-link-styles: true;
 
 @import "govuk-frontend/govuk/all";
 @import "utils/overrides";
+@import "area";
 @import "summary";
 
 /** print stying **/

@@ -1,1 +1,30 @@
 @import 'all.scss';
+
+.SummaryArea {
+  &__read-more {
+    display: none;
+  }
+  &__heading {
+    page-break-after: avoid;
+  }
+
+  &__Concerning__heading,
+  &__Involvement__heading,
+  &_USP__heading {
+    @apply --non-standard-heading;
+  }
+
+  &__Concerning__list,
+  &__Involvement__list,
+  &_USP__heading + p {
+    @apply --non-standard-post-heading;
+  }
+}
+
+.area__USP__heading {
+  @apply --non-standard-heading;
+}
+
+.area__USP__heading + p {
+  @apply --non-standard-post-heading;
+}
