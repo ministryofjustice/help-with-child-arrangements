@@ -1,0 +1,20 @@
+div.ShareLink {
+  background-color: var(--govuk-blue);
+  padding: 0.5rem;
+
+  & a {
+    font-size: 16px;
+    background: url('/public/images/icon-email.svg') no-repeat;
+    background-size: 22px 22px;
+    color: var(--govuk-white);
+    padding-left: 25px;
+  }
+
+  @media (min-width: 641px) {
+    position: relative;
+    margin-top: -5.7rem;
+    padding: 1rem;
+    top: 0;
+  }
+}
+

@@ -20,18 +20,10 @@
     margin: 0 0 1.5rem;
   }
 
-  @include govuk-media-query($from: mobile) {
-    width: 50%;
-  }
-
   @include govuk-media-query($from: tablet) {
     border-left: none;
     border-top: var(--border-brand);
     padding-left: 0;
     padding-top: 1rem;
-    position: absolute;
-    right: 0;
-    top: 0.5rem;
-    width: 31%;
   }
 }

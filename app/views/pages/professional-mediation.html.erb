@@ -1,0 +1,100 @@
+<% content_for :page_title do %>
+  <%= t('page_title.mediation') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.mediation') => false }) %>
+<% end %>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl"><%= t('page_title.mediation') %></h1>
+    <p class="govuk-body-lead">Mediation sessions are run by professionals who help you try to reach an agreement
+      without going to court.</p>
+    <p class="govuk-body">Mediation isn’t relationship counselling and you don’t have to be in the same room as the
+      other parent.</p>
+
+    <%= govuk_inset_text(html_attributes: { lang: "en-GB", data: { demo: true }, aria: { role: 'note' } }) do %>
+      <p class="govuk-body"><strong>You could get up to £500 towards family mediation</strong></p>
+      <p class="govuk-body">This is a new scheme available for a short time only.<br>
+        Find out more about the
+        <%= govuk_link_to 'family mediation voucher scheme', 'https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&utm_campaign=mediation_vouchers' %>
+        .</p>
+    <% end %>
+
+    <div class="SummaryArea__USP">
+      <h4 class="SummaryArea_USP__heading govuk-heading-s govuk-!-margin-bottom-1">
+        <span aria-hidden="true">
+          <span data-block-name="Area__USP__heading">Choose this if...</span>
+        </span>
+        <span class="govuk-visually-hidden">
+          <span data-block-name="Area__USP__heading--a11y">Choose Professional mediation if...</span>
+        </span>
+      </h4>
+
+      <p>You both want to reach an agreement but need help from someone who is independent.</p>
+      <p><strong>If you’ve been invited to mediation,
+        <%= govuk_link_to 'find out what it means for you', 'https://helpwithchildarrangements.service.justice.gov.uk/professional-mediation-other-parent' %>
+        .</strong></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="ShareLink">
+      <a href="mailto:?to=&body=Mediation%20sessions%20are%20run%20by%20professionals%20who%20help%20you%20try%20to%20reach%20an%20agreement%20without%20going%20to%20court.%0D%0AMediation%20isn%E2%80%99t%20relationship%20counselling%20and%20you%20don%E2%80%99t%20have%20to%20be%20in%20the%20same%20room%20as%20the%20other%20parent.%0D%0A%0D%0AFind%20out%20more%20about%20professional%20mediation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fprofessional-mediation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20professional%20mediation%20with%20you">Share
+        this page by email</a>
+    </div>
+
+    <div class="ProsCons ProsCons--header">
+      <div class="Pros">
+        <h4 class="ProsCons__heading ProsCons__heading--pros govuk-heading-s" aria-label="Pros of Negotiation tools and services">
+          <span data-block-name="ProsCons__heading--pros">Pros</span>
+        </h4>
+        <ul class="ProsCons__list govuk-list ProsCons__list--pros">
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">cheapest and quickest
+            option
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">you and the other parent
+            are in control
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">helps children continue
+            family relationships
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">agreements are
+            flexible
+          </li>
+        </ul>
+      </div>
+      <div class="Cons">
+        <h4 class="ProsCons__heading ProsCons__heading--cons  govuk-heading-s" aria-label="Cons of Negotiation tools and services">
+          <span data-block-name="ProsCons__heading--cons">Cons</span>
+        </h4>
+        <ul class="ProsCons__list govuk-list ProsCons__list--cons">
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--cons">you’ll need a consent
+            order to make agreement legally
+            binding
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--cons">process heavily relies
+            on parent co-operation
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="professional-mediation-video" class="SectionVideo govuk-grid-row" data-block-name="professional-mediation-video">
+  <div class="govuk-grid-column-two-thirds">
+    <h2 class="govuk-heading-l">Understanding family mediation</h2>
+    <p class="govuk-visually-hidden">
+      <a href="https://www.youtube.com/watch?v=zYhWdwazCZA">Understanding family mediation - Video on YouTube</a>
+    </p>
+
+    <div aria-hidden="true" class="VideoPlayer__container VideoPlayer__lightbox" type="video" id="c_video_player">
+      <div class="VideoPlayer__wrapper">
+        <iframe id="understanding_family_mediation" title="Understanding Family Mediation" src="https://www.youtube.com/embed/zYhWdwazCZA?enablejsapi=1&amp;origin=https://helpwithchildarrangements.service.justice.gov.uk" allowfullscreen="" data-gtm-yt-inspected-8="true"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
