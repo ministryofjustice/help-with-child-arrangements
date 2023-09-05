@@ -17,7 +17,7 @@
   }
 
   --section-grid {
-    @media (--kit-mlarge) {
+    @include govuk-media-query($from: desktop) {
       padding-right: 35%;
     }
   }
