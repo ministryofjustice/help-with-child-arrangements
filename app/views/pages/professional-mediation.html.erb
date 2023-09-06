@@ -15,7 +15,7 @@
       other parent.</p>
 
     <%= govuk_inset_text(html_attributes: { lang: "en-GB", data: { demo: true }, aria: { role: 'note' } }) do %>
-      <p class="govuk-body"><strong>You could get up to £500 towards family mediation</strong></p>
+      <p class="govuk-body"><strong>You could get up to &pound;500 towards family mediation</strong></p>
       <p class="govuk-body">This is a new scheme available for a short time only.<br>
         Find out more about the
         <%= govuk_link_to 'family mediation voucher scheme', 'https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&utm_campaign=mediation_vouchers' %>
@@ -352,10 +352,10 @@
     <nav class="AreaLinks govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="AreaLinks__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="AreaLinks__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to 'Negotiation tools and services', '/negotiating-between-parents' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to 'Lawyer negotiation', '/lawyer-negotiation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to 'Collaborative law', '/collaborative-law' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to 'Going to court', '/going-to-court' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
       </ul>
       <div class="AreaLinks__overview">
         <h3 class="govuk-heading-m">Overview</h3>
