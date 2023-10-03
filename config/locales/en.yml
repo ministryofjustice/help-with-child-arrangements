@@ -10,11 +10,14 @@ en:
 
   page_title:
     accessibility: Accessibility statement
-    case: Account details
-    login: Admin login
-    search: Search
-    search_results: Search results
-    upload: Upload CSV
+    involving: Putting your children first
+    responsibility: Your parental responsibility
+    support: Getting emotional support
+    negotiation: Negotiation tools and services
+    mediation: Professional mediation
+    lawyer_negotiation: Lawyer negotiation
+    collaborative: Collaborative law
+    court: Going to court
 
   helpers:
     label:

@@ -1,0 +1,368 @@
+<% content_for :page_title do %>
+  <%= t('page_title.mediation') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.mediation') => false }) %>
+<% end %>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl"><%= t('page_title.mediation') %></h1>
+    <p class="govuk-body-lead">Mediation sessions are run by professionals who help you try to reach an agreement
+      without going to court.</p>
+    <p class="govuk-body">Mediation isn't relationship counselling and you don't have to be in the same room as the
+      other parent.</p>
+
+    <%= govuk_inset_text(html_attributes: { lang: "en-GB", data: { demo: true }, aria: { role: 'note' } }) do %>
+      <p class="govuk-body"><strong>You could get up to &pound;500 towards family mediation</strong></p>
+      <p class="govuk-body">This is a new scheme available for a short time only.<br>
+        Find out more about the
+        <%= govuk_link_to 'family mediation voucher scheme', 'https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&utm_campaign=mediation_vouchers' %>
+        .</p>
+    <% end %>
+
+    <div class="SummaryArea__USP">
+      <h4 class="SummaryArea_USP__heading govuk-heading-s govuk-!-margin-bottom-1">
+        <span aria-hidden="true">
+          <span data-block-name="Area__USP__heading">Choose this if...</span>
+        </span>
+        <span class="govuk-visually-hidden">
+          <span data-block-name="Area__USP__heading--a11y">Choose Professional mediation if...</span>
+        </span>
+      </h4>
+
+      <p>You both want to reach an agreement but need help from someone who is independent.</p>
+      <p><strong>If you've been invited to mediation,
+        <%= govuk_link_to 'find out what it means for you', 'https://helpwithchildarrangements.service.justice.gov.uk/professional-mediation-other-parent' %>
+        .</strong></p>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <div class="ShareLink">
+      <a href="mailto:?to=&body=Mediation%20sessions%20are%20run%20by%20professionals%20who%20help%20you%20try%20to%20reach%20an%20agreement%20without%20going%20to%20court.%0D%0AMediation%20isn%E2%80%99t%20relationship%20counselling%20and%20you%20don%E2%80%99t%20have%20to%20be%20in%20the%20same%20room%20as%20the%20other%20parent.%0D%0A%0D%0AFind%20out%20more%20about%20professional%20mediation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fprofessional-mediation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20professional%20mediation%20with%20you">Share
+        this page by email</a>
+    </div>
+
+    <div class="ProsCons ProsCons--header">
+      <div class="Pros">
+        <h4 class="ProsCons__heading ProsCons__heading--pros govuk-heading-s" aria-label="Pros of Negotiation tools and services">
+          <span data-block-name="ProsCons__heading--pros">Pros</span>
+        </h4>
+        <ul class="ProsCons__list govuk-list ProsCons__list--pros">
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">cheapest and quickest
+            option
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">you and the other parent
+            are in control
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">helps children continue
+            family relationships
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--pros">agreements are
+            flexible
+          </li>
+        </ul>
+      </div>
+      <div class="Cons">
+        <h4 class="ProsCons__heading ProsCons__heading--cons  govuk-heading-s" aria-label="Cons of Negotiation tools and services">
+          <span data-block-name="ProsCons__heading--cons">Cons</span>
+        </h4>
+        <ul class="ProsCons__list govuk-list ProsCons__list--cons">
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--cons">you'll need a consent
+            order to make agreement legally
+            binding
+          </li>
+          <li class="ProsCons__item govuk-list govuk-!-font-size-14 ProsCons__item--cons">process heavily relies
+            on parent co-operation
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="professional-mediation-video" class="SectionVideo govuk-grid-row" data-block-name="professional-mediation-video">
+  <div class="govuk-grid-column-full">
+    <div class="SectionVideo__wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
+          <h2 class="govuk-heading-l">Understanding family mediation</h2>
+          <p class="govuk-visually-hidden">
+            <a href="https://www.youtube.com/watch?v=zYhWdwazCZA">Understanding family mediation - Video on YouTube</a>
+          </p>
+
+          <div aria-hidden="true" type="video" id="c_video_player">
+            <div class="SectionVideo__video_wrapper">
+              <iframe id="understanding_family_mediation" title="Understanding Family Mediation" src="https://www.youtube.com/embed/zYhWdwazCZA?enablejsapi=1&amp;origin=https://helpwithchildarrangements.service.justice.gov.uk" allowfullscreen="" data-gtm-yt-inspected-8="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="step-professional-mediation-step-1" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="Step">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
+            <span class="Step__count Step__count--professional-mediation-step-1">
+              Step <span class="Step__count__counter">1</span>
+              <span aria-label=" - "></span>
+            </span>
+            Find a mediator
+          </h2>
+
+          <div class="Step__content govuk-govspeak gv-s-prose">
+            <p class="govuk-body">Mediator rates can vary depending on their experience and your location. Some offer
+              reductions
+              if you're unemployed or on a low income.</p>
+            <p class="govuk-body">Check with the mediator before booking and don't be afraid to shop around.</p>
+
+          </div>
+          <form class="content-form" action="https://www.familymediationcouncil.org.uk/find-local-mediator/" target="_blank">
+            <input type="hidden" name="di" value="5">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="pc">
+                <strong>Enter your postcode</strong>
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="pc" name="pc" type="text">
+            </div>
+            <button class="govuk-button" data-module="govuk-button" type="submit">
+              Find a mediator
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="step-professional-mediation-step-2" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="Step">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
+            <span class="Step__count Step__count--professional-mediation-step-1">
+              Step <span class="Step__count__counter">2</span>
+              <span aria-label=" - "></span>
+            </span>
+            Book initial meeting with mediator
+          </h2>
+
+          <div class="Step__content  govuk-govspeak gv-s-prose">
+            <p class="govuk-body">You must then meet with the mediator to check if mediation is right for you.</p>
+            <p class="govuk-body">This initial meeting is called a
+              <a href="https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/">Mediation
+                Information and Assessment Meeting (MIAM)</a>.</p>
+            <p class="govuk-body">The other parent will need to see the mediator too. They can either come to the same
+              MIAM as you or have a
+              separate meeting with the mediator.</p>
+            <p class="govuk-body">If you or the other parent want to go to
+              <a href="https://helpwithchildarrangements.service.justice.gov.uk/going-to-court">court</a> you must
+              attend a
+              MIAM, unless
+              <a href="https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions">you're
+                exempt</a>.</p>
+            <p class="govuk-body">At the meeting the mediator will explain:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>how mediation works</li>
+              <li>the benefits</li>
+              <li>whether it's right for you</li>
+              <li>the likely costs</li>
+              <li><a href="https://www.gov.uk/check-legal-aid">if you're eligible for mediation through legal aid</a>
+              </li>
+              <li>other options available to you</li>
+            </ul>
+            <p class="govuk-body">If you apply to court only authorised mediators can carry out a MIAM. Check with the
+              mediator before you
+              book.</p>
+
+          </div>
+        </div>
+
+        <div class="Cost govuk-grid-column-one-third govuk-!-margin-top-4">
+          <h4 class="Cost__heading govuk-heading-s">Average cost of MIAM per person</h4>
+          <p class="Cost__amount govuk-heading-l"><strong>&pound;90</strong></p>
+          <p class="govuk-body-xs">Estimated fees may vary depending on your location and the experience of the
+            mediator. Some mediators offer reductions if you're unemployed or on a low income. It may also be cheaper
+            if you attend together. If you or the other parent are eligible for legal aid you both will qualify for a
+            free MIAM.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="step-professional-mediation-step-3" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="Step">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
+            <span class="Step__count Step__count--professional-mediation-step-1">
+              Step <span class="Step__count__counter">3</span>
+              <span aria-label=" - "></span>
+            </span>
+            Attend mediation sessions
+          </h2>
+
+          <div class="Step__content  govuk-govspeak gv-s-prose">
+            <p class="govuk-body">Mediation usually takes place face-to-face with the other parent over several
+              sessions. Each session lasts about 90 minutes.</p>
+            <p class="govuk-body">You can choose to have mediation:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>in the same room</li>
+              <li>in different rooms (shuttle mediation)</li>
+              <li>on different days</li>
+              <li>with your children (child-inclusive mediation)</li>
+              <li>with a lawyer (lawyer-assisted mediation)</li>
+            </ul>
+            <p class="govuk-body">During the sessions the mediator will:</p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>discuss what your options are</li>
+              <li>make sure you and the other parent both have a chance to speak</li>
+              <li>tell you when you might need further help (for example pension advice)</li>
+              <li>ensure you make decisions together that are in your children's best interests</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="Cost govuk-grid-column-one-third govuk-!-margin-top-4">
+          <h4 class="Cost__heading govuk-heading-s">Average cost of mediation per person</h4>
+          <p class="Cost__amount govuk-heading-l"><strong>&pound;480</strong></p>
+          <p class="govuk-body-xs">Estimated cost based on an average of 3 sessions. Fees may vary depending on your
+            location and the experience of the mediator. Some mediators offer reductions if you're unemployed or on a
+            low income.
+            <%= govuk_link_to 'Legal aid may be available for mediation', 'https://www.nfm.org.uk/about-family-mediation-services/legal-aid-for-mediation/' %>
+            .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="step-professional-mediation-step-4" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="Step">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">
+            <span class="Step__count Step__count--professional-mediation-step-1">
+              Step <span class="Step__count__counter">4</span>
+              <span aria-label=" - "></span>
+            </span>
+            Get agreement in writing
+          </h2>
+
+          <div class="Step__content  govuk-govspeak gv-s-prose">
+            <p class="govuk-body">If you both reach an agreement the mediator will write down the details. This isn't
+              legally binding but is flexible so you can both agree to update it if your situation changes.</p>
+            <h3 class="govuk-heading-s">Making your agreement legally binding</h3>
+            <p class="govuk-body">You can ask a lawyer to draft a consent order if you or the other parent prefer to
+              make your agreement legally binding.</p>
+            <p class="govuk-body">This can be useful if your arrangements are long and complex or you think you need a
+              more formal agreement with the other parent.</p>
+            <p class="govuk-body">GOV.UK has more information about consent orders and
+              <a href="https://www.gov.uk/looking-after-children-divorce/if-you-agree">making your agreement legally
+                binding</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="AreaLinks">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-8">
+          <h2 class="govuk-heading-l">Other types of mediation</h2>
+
+          <h3 class="govuk-heading-m">Shuttle mediation</h3>
+          <p class="govuk-body">Your mediator may suggest that you and the other parent sit in separate rooms while the
+            mediator
+            'shuttles' between you. This is a good option if you'd prefer not to meet the other parent face-to-face or
+            don't
+            feel safe to do so.</p>
+          <p class="govuk-body">Shuttle mediation is usually more expensive than standard mediation because it's a
+            longer
+            process.</p>
+
+          <h3 class="govuk-heading-m">Lawyer-assisted mediation</h3>
+          <p class="govuk-body">This is different to standard mediation because you and the other parent can both hire
+            lawyers
+            who attend sessions with you. Your lawyers can also help with shuttle mediation.</p>
+          <p class="govuk-body">As mediators can't offer legal advice you may want to choose this option if you have a
+            lot of
+            complex legal issues to resolve.</p>
+          <p class="govuk-body">You'll need to consider the additional cost of a lawyer if you select this option.</p>
+
+          <h3 class="govuk-heading-m">Child-inclusive mediation</h3>
+          <p class="govuk-body">If your children understand your situation you can ask them to attend so a mediator can
+            hear their wishes.</p>
+
+          <p class="govuk-body">Talk with a mediator first about whether it's suitable to involve your children and
+            remember to check if your children are happy to take part.</p>
+
+          <p class="govuk-body">You'll need to make sure your mediator is qualified to offer this service before
+            booking.</p>
+
+          <h2 class="govuk-heading-l">When mediation may not be suitable</h2>
+          <h3 class="govuk-heading-m">Child abuse or neglect</h3>
+          <p class="govuk-body">You shouldn't make arrangements with the other parent if you think they:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>are abusing your children</li>
+            <li>are neglecting your children</li>
+            <li>have a drug or alcohol problem that's affecting your children</li>
+          </ul>
+          <p class="govuk-body">
+            <a href="https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/">Find out more about child abuse and
+              neglect</a></p>
+          <p class="govuk-body"><a href="https://www.gov.uk/report-child-abuse-to-local-council">Report child abuse</a>
+            if you have any concerns and tell your children about <a href="https://www.childline.org.uk/">Childline</a>
+            so they can report any abuse themselves.</p>
+          <p class="govuk-body">You can also
+            <a href="https://www.nspcc.org.uk/keeping-children-safe/reporting-abuse/report/report-abuse-online/">report
+              a concern about a child online</a> to the National Society for the Prevention of Cruelty to Children
+            (NSPCC).</p>
+          <h3 class="govuk-heading-m">Domestic abuse</h3>
+          <p class="govuk-body">Mediation with the other parent may not be suitable if you think they pose a threat to
+            you or your children's safety.</p>
+          <p class="govuk-body">Find out more about
+            <a href="http://www.refuge.org.uk/our-work/forms-of-violence-and-abuse/domestic-violence/">signs of domestic
+              violence</a> if you're unsure whether you're a victim.</p>
+          <p class="govuk-body"><a href="https://www.gov.uk/report-domestic-abuse">Report domestic violence</a> when
+            it's safe to do so and you think you're a victim.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="other-ways-to-reach-an-agreement" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <nav class="AreaLinks govuk-!-margin-top-6" data-block-name="preparing-collection">
+      <h2 class="AreaLinks__heading govuk-heading-l">Other ways to reach an agreement</h2>
+      <ul class="AreaLinks__list govuk-list">
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
+      </ul>
+      <div class="AreaLinks__overview">
+        <h3 class="govuk-heading-m">Overview</h3>
+        <p class="govuk-body">
+          <%= govuk_link_to 'View all child arrangements options', '/' %>
+        </p>
+      </div>
+    </nav>
+  </div>
+</section>
