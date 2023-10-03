@@ -5,7 +5,7 @@ Rails.application.config.hosts = [
   IPAddr.new("::/0"),             # All IPv6 addresses.
   "localhost",                    # The localhost reserved domain.
   ENV["VIRTUAL_HOST"], # Additional host for development.
-  ENV["HOST_DNS"]
+  ENV["HOST_DNS"],
 ]
 
 Rails.application.configure do
