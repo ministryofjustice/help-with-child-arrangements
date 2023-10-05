@@ -6,7 +6,6 @@ en:
     accessibility: Accessibility statement
     help: Help
     cookie: Cookie policy
-    contact: Contact us
 
   page_title:
     accessibility: Accessibility statement
@@ -18,21 +17,3 @@ en:
     lawyer_negotiation: Lawyer negotiation
     collaborative: Collaborative law
     court: Going to court
-
-  helpers:
-    label:
-      search:
-        keywords: Search by keywords
-      login:
-        name: Login name
-      upload:
-        file: Select a file to upload
-    legend:
-      search:
-        date_from: Date from
-        date_to: Date to
-    hint:
-      search:
-        keywords: For example, name, location, case type, organisation and/or court account number (has 9 characters, for example 27891231P)
-        date_from: For example, 27 3 2018
-        date_to: For example, 27 3 2021

@@ -15,6 +15,4 @@ if [ "$RAILS_ENV" = 'development' ]; then
   nohup yarn build:css --watch &
 fi
 
-/etc/init.d/entrypoint-migrations.sh
-
 /etc/init.d/entrypoint-webapp.sh

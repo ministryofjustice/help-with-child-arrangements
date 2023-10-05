@@ -54,8 +54,6 @@ GEM
     activerecord (7.0.7.2)
       activemodel (= 7.0.7.2)
       activesupport (= 7.0.7.2)
-    activerecord-import (1.5.0)
-      activerecord (>= 4.2)
     activestorage (7.0.7.2)
       actionpack (= 7.0.7.2)
       activejob (= 7.0.7.2)
@@ -71,7 +69,6 @@ GEM
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
-    bcrypt (3.1.19)
     better_errors (2.10.1)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
@@ -103,11 +100,6 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     erubi (1.12.0)
-    factory_bot (6.2.1)
-      activesupport (>= 5.0.0)
-    factory_bot_rails (6.2.0)
-      factory_bot (~> 6.2.0)
-      railties (>= 5.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     google-protobuf (3.24.2)
@@ -387,7 +379,6 @@ GEM
     parser (3.2.2.3)
       ast (~> 2.4.1)
       racc
-    pg (1.5.3)
     plek (5.0.0)
     prometheus_exporter (2.0.8)
       webrick
@@ -539,8 +530,6 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  activerecord-import
-  bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
   bootsnap
@@ -548,14 +537,11 @@ DEPENDENCIES
   capybara
   cssbundling-rails (~> 1.2)
   debug
-  factory_bot_rails
   govuk-components
   govuk_app_config
   govuk_design_system_formbuilder
   jbuilder
   jsbundling-rails (~> 1.1)
-  pagy
-  pg
   puma (~> 6.3)
   rails (>= 7.0.4.3)
   rspec-rails

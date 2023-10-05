@@ -2,8 +2,7 @@ RSpec.describe "Static pages" do
   it "shows the homepage" do
     get root_path
     expect(response).to be_successful
-    expect(response.body).to include("Help with child arrangements")
-    expect(response.body).to include(search_path)
+    expect(response.body).to include("Get help with child arrangements")
   end
 
   it "shows the accessibility page" do
