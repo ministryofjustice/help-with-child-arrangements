@@ -30,8 +30,7 @@
 
   <div class="govuk-grid-column-one-third">
     <div class="share_link">
-      <a href="mailto:?to=&body=You%20don%E2%80%99t%20have%20to%20deal%20directly%20with%20the%20other%20parent%20if%20you%20choose%20this%20option.%20You%20hire%20a%20lawyer%20to%20negotiate%20arrangements%20for%20you.%0D%0AYou%20can%20still%20hire%20a%20lawyer%20to%20negotiate%20on%20your%20behalf%20even%20if%20the%20other%20parent%20chooses%20not%20to%20use%20one.%0D%0A%0D%0AFind%20out%20more%20about%20lawyer%20negotiation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Flawyer-negotiation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20lawyer%20negotiation%20with%20you">Share
-        this page by email</a>
+      <%= govuk_link_to "Share this page by email", "mailto:?to=&body=You%20don%E2%80%99t%20have%20to%20deal%20directly%20with%20the%20other%20parent%20if%20you%20choose%20this%20option.%20You%20hire%20a%20lawyer%20to%20negotiate%20arrangements%20for%20you.%0D%0AYou%20can%20still%20hire%20a%20lawyer%20to%20negotiate%20on%20your%20behalf%20even%20if%20the%20other%20parent%20chooses%20not%20to%20use%20one.%0D%0A%0D%0AFind%20out%20more%20about%20lawyer%20negotiation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Flawyer-negotiation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20lawyer%20negotiation%20with%20you" %>
     </div>
 
     <div class="pros_cons pros_cons--header">
@@ -79,7 +78,7 @@
         <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
           <h2 class="govuk-heading-l">What is lawyer negotiation?</h2>
           <p class="govuk-visually-hidden">
-            <a href="https://www.youtube.com/watch?v=vGGDIsUJHNY">What is lawyer negotiation? - Video on YouTube</a>
+            <%= govuk_link_to "What is lawyer negotiation? - Video on YouTube", "https://www.youtube.com/watch?v=vGGDIsUJHNY" %>
           </p>
 
           <div aria-hidden="true" type="video" id="c_video_player">
@@ -101,7 +100,7 @@
       to discuss the case. You’ll need to explain your issues and the outcome you want to achieve.</p>
     <p>After receiving instructions from you, your lawyer will begin negotiations with the other parent or their lawyer.
       You won’t have to deal directly with the other parent at any time.</p>
-    <p>As in <a href="https://helpwithchildarrangements.service.justice.gov.uk/collaborative-law">collaborative law</a>
+    <p>As in <%= govuk_link_to "collaborative law", collaborative_law_path %>
       both lawyers will try and keep the case from going to court.</p>
     <p>If your lawyers reach an agreement that you and the other parent are happy with they'll write down the details.
       If you both want to make the agreement legally binding they’ll submit it to court for consideration and
@@ -129,10 +128,10 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), '/professional-mediation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
       </ul>
       <div class="area_links__overview">
         <h3 class="govuk-heading-m">Overview</h3>

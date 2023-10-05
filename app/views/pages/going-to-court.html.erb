@@ -13,8 +13,9 @@
       arrangements, or you’re worried about the welfare of you or your children.</p>
     <%= govuk_inset_text do %>
       <p class="govuk-body">The court process is different in
-        <a href="https://www.mygov.scot/organisations/scottish-courts-and-tribunals-service">Scotland</a> and
-        <a href="https://www.nidirect.gov.uk/articles/solicitors-and-courts">Northern Ireland</a>.</p>
+        <%= govuk_link_to "Scotland", "https://www.mygov.scot/organisations/scottish-courts-and-tribunals-service" %> and
+        <%= govuk_link_to "Northern Ireland", "https://www.nidirect.gov.uk/articles/solicitors-and-courts" %>.
+      </p>
     <% end %>
     <div class="summary_area__usp">
       <h4 class="summary_area_usp__heading govuk-heading-s govuk-!-margin-bottom-1">
@@ -29,8 +30,7 @@
       <p class="govuk-body">You want a court to make a decision or you have concerns about domestic abuse or child
         abuse.</p>
       <p class="govuk-body"><strong>If the other parent has applied to court,
-        <a href="https://helpwithchildarrangements.service.justice.gov.uk/going-to-court-other-parent">find out what it
-          means for you</a>.</strong></p>
+        <%= govuk_link_to "find out what it means for you", "https://helpwithchildarrangements.service.justice.gov.uk/going-to-court-other-parent" %>.</strong></p>
     </div>
   </div>
 
@@ -86,8 +86,7 @@
         <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
           <h2 class="govuk-heading-l">Making your application to court</h2>
           <p class="govuk-visually-hidden">
-            <a href="https://www.youtube.com/watch?v=wUi7CsoeOE8">Making your application to court - Video on
-              YouTube</a>
+            <%= govuk_link_to "Making your application to court - Video on YouTube", "https://www.youtube.com/watch?v=wUi7CsoeOE8" %>
           </p>
 
           <div aria-hidden="true" type="video" id="c_video_player">
@@ -107,7 +106,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">1</span>
               <span aria-label=" - "></span>
             </span>
@@ -120,28 +119,23 @@
             <p class="govuk-body">There's usually a better outcome for children and parents if an agreement can be
               reached without going to court.</p>
             <p class="govuk-body">If you and the other parent agree on the majority of issues you could trying using a
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/negotiating-between-parents">negotiation
-                tool or service</a>. Most of them are free and can help you both reach an amicable agreement.</p>
+              <%= govuk_link_to "negotiation tool or service", negotiating_between_parents_path %>. Most of them are free and can help you both reach an amicable agreement.</p>
             <p class="govuk-body">
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/professional-mediation">Professional
-                mediation</a> is usually quicker than court and can be cheaper than using a lawyer. It’s also a less
+              <%= govuk_link_to "Professional mediation", professional_mediation_path %> is usually quicker than court and can be cheaper than using a lawyer. It’s also a less
               stressful experience for your children.</p>
             <%= govuk_inset_text do %>
               <p class="govuk-body"><strong>You could get up to £500 towards family mediation</strong></p>
               <p class="govuk-body">This is a new scheme available for a short time only.<br>
                 Find out more about the
-                <a href="https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&amp;utm_campaign=mediation_vouchers">family
-                  mediation voucher scheme</a>.</p>
+                <%= govuk_link_to "family mediation voucher scheme", "https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&amp;utm_campaign=mediation_vouchers" %>.</p>
             <% end %>
             <p class="govuk-body">If your situation is complex, or you’re not communicating with the other parent, you
               can use a lawyer to help you negotiate.</p>
             <p class="govuk-body">With
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/collaborative-law">collaborative law</a>
+              <%= govuk_link_to "collaborative law", collaborative_law_path %>
               or
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/lawyer-negotiation">lawyer
-                negotiation</a>
+              <%= govuk_link_to "lawyer negotiation", lawyer_negotiation_path %>
               you’ll have legal support throughout. These options can also be quicker and less stressful than court.</p>
-
           </div>
         </div>
       </div>
@@ -155,7 +149,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">2</span>
               <span aria-label=" - "></span>
             </span>
@@ -168,7 +162,7 @@
             <p class="govuk-body">They may try and negotiate a deal out of court with the other parent or recommend you move to step 2 straight away.</p>
             <p class="govuk-body">Your lawyer and the other parent’s lawyer will then contact each other so they can
               plan for your first collaborative meeting.</p>
-            <p class="govuk-body"><a href="https://solicitors.lawsociety.org.uk/">Find a legal adviser</a></p>
+            <p class="govuk-body"><%= govuk_link_to "Find a legal adviser", "https://solicitors.lawsociety.org.uk/" %></p>
             <h3 class="govuk-heading-s">Represent yourself</h3>
             <p class="govuk-body">You may choose to represent yourself because you’d prefer to speak to the judge directly or because you can’t afford the legal fees.</p>
             <p class="govuk-body">If you can’t afford legal representation, you can still ask a lawyer for advice at any time during the court process.</p>
@@ -195,7 +189,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">3</span>
               <span aria-label=" - "></span>
             </span>
@@ -203,7 +197,7 @@
           </h2>
 
           <div class="step__content  govuk-govspeak gv-s-prose">
-            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to 'MIAM', 'https://helpwithchildarrangements.service.justice.gov.uk/professional-mediation' %>, unless <%= govuk_link_to 'you\'re exempt','https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions' %>.</p>
+            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to 'MIAM', professional_mediation_path %>, unless <%= govuk_link_to "you're exempt","https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
             <p class="govuk-body">The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p>
             <p class="govuk-body">You will need to <%= govuk_link_to 'find a mediator', 'https://www.familymediationcouncil.org.uk/find-local-mediator/' %> to book a MIAM.</p>
             <p class="govuk-body">Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>
@@ -228,7 +222,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">4</span>
               <span aria-label=" - "></span>
             </span>
@@ -236,14 +230,15 @@
           </h2>
 
           <div class="step__content">
-            <p class="govuk-body">Use the <a href="https://apply-to-court-about-child-arrangements.service.justice.gov.uk/">online service</a> to apply to court about child arrangements. It costs £232 to apply.</p>
-            <p class="govuk-body">Alternatively fill in the C100 form to&nbsp;<a href="https://www.gov.uk/looking-after-children-divorce/apply-for-court-order">make an application</a>&nbsp;and send it to the family court closest to where your child lives. You can check this on <a href="https://www.gov.uk/find-court-tribunal">find a court or tribunal.</a></p>
+            <p class="govuk-body">Use the <%= govuk_link_to "online service", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/" %> to apply to court about child arrangements. It costs £232 to apply.</p>
+            <p class="govuk-body">Alternatively fill in the C100 form to <%= govuk_link_to "make an application", "https://www.gov.uk/looking-after-children-divorce/apply-for-court-order" %> and send it to the family court closest to where your child lives. You can check this on <%= govuk_link_to "find a court or tribunal", "https://www.gov.uk/find-court-tribunal" %>.</p>
             <%= govuk_inset_text do %>
             <p class="govuk-body">You must give brief details of why you are making the application.</p>
             <% end %>
             <p>You’ll need to make a separate application if you wish to discuss any other issues in court (for example your finances).</p>
             <p>In the majority of cases, a court will set a hearing date within 2 months. But, the court may decide that an earlier first hearing (an urgent hearing) is necessary</p>
-            <p>An advisor from the&nbsp;<a href="https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/what-to-expect-from-cafcass/">Children and Family Court Advisory and Support Service (Cafcass)&nbsp;</a> or <a href="https://gov.wales/cafcass-cymru">Cafcass Cymru</a> will gather information before the first hearing.</p>
+            <p>An advisor from the <%= govuk_link_to "Children and Family Court Advisory and Support Service (Cafcass)", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/what-to-expect-from-cafcass/" %> or
+              <%= govuk_link_to "Cafcass Cymru", "https://gov.wales/cafcass-cymru" %> will gather information before the first hearing.</p>
             <p>The information includes:</p>
             <ul>
               <li>
@@ -254,8 +249,7 @@
               </li>
             </ul>
             <p>Cafcass or Cafcass Cymru will contact you to find out this information and to give you more details about what to do at the first hearing.</p>
-            <p><a href="https://helpwithchildarrangements.service.justice.gov.uk/going-to-court#c_video_player">Watch video for more details</a></p>
-
+            <p><%= govuk_link_to "Watch video for more details", "https://helpwithchildarrangements.service.justice.gov.uk/going-to-court#c_video_player" %></p>
           </div>
         </div>
         <div class="cost govuk-grid-column-one-third">
@@ -274,7 +268,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--going-to-court-step-5">
+            <span class="step__count step__count--going-to-court-step-5">
               Step <span class="step__count__counter">5</span>
               <span aria-label=" - "></span>
             </span>
@@ -289,8 +283,7 @@
             <p class="govuk-body">If the court makes an order it will be based on what is best for your child.</p>
             <p class="govuk-body">Your case may be put on hold (adjourned) if the judge needs more information or time to decide what’s best for your children. The judge may ask Cafcass to write another report.</p>
             <p class="govuk-body">A new date is set for the next hearing. If you reach an agreement before this date you’ll need to go back to court for a judge to make a consent order.</p>
-            <p class="govuk-body">GOV.UK has more information on <a href="https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order">what happens if there’s no agreement at the first hearing</a>.</p>
-
+            <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to "what happens if there’s no agreement at the first hearing", "https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order" %>.</p>
           </div>
         </div>
       </div>
@@ -306,10 +299,10 @@
           <h2 class="area_links__heading govuk-heading-l">Going to court resources</h2>
           <p class="govuk-body">
             Telephone: 01689 820272 (Resolution)<br>
-            <a href="https://www.gov.uk/check-legal-aid">Check if you can get legal aid</a><br>
-            <a href="https://www.gov.uk/find-a-legal-adviser">Find a legal adviser near you</a><br>
-            <a href="https://weareadvocate.org.uk/apply-for-help.html">Check if you can get free legal help</a><br>
-            <a href="https://www.citizensadvice.org.uk/wales/law-and-courts/legal-system/finding-free-or-affordable-legal-help/">Legal costs: free or affordable help</a>
+            <%= govuk_link_to "Check if you can get legal aid", "https://www.gov.uk/check-legal-aid" %><br>
+            <%= govuk_link_to "Find a legal adviser near you", "https://www.gov.uk/find-a-legal-adviser" %><br>
+            <%= govuk_link_to "Check if you can get free legal help", "https://weareadvocate.org.uk/apply-for-help.html" %><br>
+            <%= govuk_link_to "Legal costs: free or affordable help", "https://www.citizensadvice.org.uk/wales/law-and-courts/legal-system/finding-free-or-affordable-legal-help/" %>
           </p>
         </div>
       </div>
@@ -323,10 +316,10 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), '/professional-mediation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
       </ul>
       <div class="area_links__overview">
         <h3 class="govuk-heading-m">Overview</h3>

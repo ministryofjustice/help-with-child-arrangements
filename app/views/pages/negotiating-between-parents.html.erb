@@ -29,8 +29,7 @@
 
   <div class="govuk-grid-column-one-third">
     <div class="share_link">
-      <a href="mailto:?to=&amp;body=If%20there%20are%20no%20safety%20concerns%2C%20the%20cheapest%20and%20easiest%20way%20to%20make%20arrangements%20is%20to%20negotiate%20with%20the%20other%20parent.%20There%20are%20free%20tools%20and%20services%20that%20can%20help%20you.%0D%0A%0D%0AFind%20out%20more%20about%20negotiation%20tools%20and%20services%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fnegotiating-between-parents%3Futm_source%3Dshare&amp;subject=I%20want%20to%20share%20this%20page%20about%20negotiation%20tools%20and%20services%20with%20you">Share
-        this page by email</a>
+      <%= govuk_link_to "Share this page by email", "mailto:?to=&amp;body=If%20there%20are%20no%20safety%20concerns%2C%20the%20cheapest%20and%20easiest%20way%20to%20make%20arrangements%20is%20to%20negotiate%20with%20the%20other%20parent.%20There%20are%20free%20tools%20and%20services%20that%20can%20help%20you.%0D%0A%0D%0AFind%20out%20more%20about%20negotiation%20tools%20and%20services%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fnegotiating-between-parents%3Futm_source%3Dshare&amp;subject=I%20want%20to%20share%20this%20page%20about%20negotiation%20tools%20and%20services%20with%20you" %>
     </div>
 
     <div class="pros_cons pros_cons--header">
@@ -177,10 +176,10 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), '/professional-mediation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
       </ul>
       <div class="area_links__overview">
         <h3 class="govuk-heading-m">Overview</h3>
