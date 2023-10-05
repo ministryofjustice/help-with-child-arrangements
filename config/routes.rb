@@ -14,8 +14,6 @@ Rails.application.routes.draw do
   get "/collaborative-law", to: "pages#collaborative-law"
   get "/going-to-court", to: "pages#going-to-court"
 
-  resources :cases, param: :account_number, only: [:show]
-
   get "/404", to: "errors#not_found"
   get "/500", to: "errors#internal_error"
 
