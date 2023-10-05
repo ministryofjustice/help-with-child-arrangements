@@ -5,7 +5,10 @@
   "author": "MOJ",
   "license": "MIT",
   "stylelint": {
-    "extends": "stylelint-config-gds/scss"
+    "extends": "stylelint-config-gds/scss",
+    "rules": {
+      "function-url-scheme-allowed-list": ["/^https/"]
+    }
   },
   "dependencies": {
     "esbuild": "^0.19.2",
