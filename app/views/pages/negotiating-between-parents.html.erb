@@ -181,12 +181,7 @@
         <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
         <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
       </ul>
-      <div class="area_links__overview">
-        <h3 class="govuk-heading-m">Overview</h3>
-        <p class="govuk-body">
-          <%= govuk_link_to "View all child arrangements options", root_path %>
-        </p>
-      </div>
+      <%= render "overview" %>
     </nav>
   </div>
 </section>
