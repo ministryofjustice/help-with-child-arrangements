@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get "/healthcheck/live", to: proc { [200, {}, %w[OK]] }
   get "/healthcheck/ready", to: GovukHealthcheck.rack_response
 
-  get "/accessibility", to: "pages#accessibility"
+  get "/about/accessibility", to: "about#accessibility"
+
   get "/involving-children", to: "pages#involving-children"
   get "/parental-responsibility", to: "pages#parental-responsibility"
   get "/emotional-support", to: "pages#emotional-support"
