@@ -14,11 +14,9 @@ RUN apk add --no-cache \
 COPY .ruby-version Gemfile* ./
 
 # Install gems and remove gem cache
-RUN bundler -v && \
-    bundle config set no-cache 'true' && \
-    bundle config set frozen 'true' && \
-    bundle config set no-binstubs 'true' && \
-    bundle config set without 'development test' && \
+RUN gem install bundler -v 2.4.20
+RUN bundle config deployment true && \
+    bundle config without development test && \
     bundle install --jobs 4 --retry 3
 
 # Install node packages defined in package.json
@@ -62,7 +60,7 @@ COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 
 # Create log and tmp
 RUN mkdir -p log tmp
-RUN chown -R appuser:appgroup db log tmp
+RUN chown -R appuser:appgroup log tmp
 
 # Set user
 USER 1000
