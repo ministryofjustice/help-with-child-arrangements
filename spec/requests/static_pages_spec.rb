@@ -6,7 +6,7 @@ RSpec.describe "Static pages" do
   end
 
   it "shows the accessibility page" do
-    get accessibility_path
+    get about_accessibility_path
     expect(response).to be_successful
     expect(response.body).to include("Accessibility statement for Help with child arrangements")
   end

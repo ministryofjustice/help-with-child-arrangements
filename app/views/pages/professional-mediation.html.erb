@@ -41,8 +41,7 @@
 
   <div class="govuk-grid-column-one-third">
     <div class="share_link">
-      <a href="mailto:?to=&body=Mediation%20sessions%20are%20run%20by%20professionals%20who%20help%20you%20try%20to%20reach%20an%20agreement%20without%20going%20to%20court.%0D%0AMediation%20isn%E2%80%99t%20relationship%20counselling%20and%20you%20don%E2%80%99t%20have%20to%20be%20in%20the%20same%20room%20as%20the%20other%20parent.%0D%0A%0D%0AFind%20out%20more%20about%20professional%20mediation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fprofessional-mediation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20professional%20mediation%20with%20you">Share
-        this page by email</a>
+      <%= govuk_link_to "Share this page by email", "mailto:?to=&body=Mediation%20sessions%20are%20run%20by%20professionals%20who%20help%20you%20try%20to%20reach%20an%20agreement%20without%20going%20to%20court.%0D%0AMediation%20isn%E2%80%99t%20relationship%20counselling%20and%20you%20don%E2%80%99t%20have%20to%20be%20in%20the%20same%20room%20as%20the%20other%20parent.%0D%0A%0D%0AFind%20out%20more%20about%20professional%20mediation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fprofessional-mediation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20professional%20mediation%20with%20you" %>
     </div>
 
     <div class="pros_cons pros_cons--header">
@@ -90,7 +89,7 @@
         <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
           <h2 class="govuk-heading-l">Understanding family mediation</h2>
           <p class="govuk-visually-hidden">
-            <a href="https://www.youtube.com/watch?v=zYhWdwazCZA">Understanding family mediation - Video on YouTube</a>
+            <%= govuk_link_to "Understanding family mediation - Video on YouTube", "https://www.youtube.com/watch?v=zYhWdwazCZA" %>
           </p>
 
           <div aria-hidden="true" type="video" id="c_video_player">
@@ -110,7 +109,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">1</span>
               <span aria-label=" - "></span>
             </span>
@@ -148,7 +147,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">2</span>
               <span aria-label=" - "></span>
             </span>
@@ -158,24 +157,21 @@
           <div class="step__content  govuk-govspeak gv-s-prose">
             <p class="govuk-body">You must then meet with the mediator to check if mediation is right for you.</p>
             <p class="govuk-body">This initial meeting is called a
-              <a href="https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/">Mediation
-                Information and Assessment Meeting (MIAM)</a>.</p>
+              <%= govuk_link_to "Mediation Information and Assessment Meeting (MIAM)", "https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/" %>.</p>
             <p class="govuk-body">The other parent will need to see the mediator too. They can either come to the same
               MIAM as you or have a
               separate meeting with the mediator.</p>
             <p class="govuk-body">If you or the other parent want to go to
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/going-to-court">court</a> you must
-              attend a
-              MIAM, unless
-              <a href="https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions">you're
-                exempt</a>.</p>
+              <%= govuk_link_to "court", "https://helpwithchildarrangements.service.justice.gov.uk/going-to-court" %>
+              you must attend a MIAM, unless
+              <%= govuk_link_to "you're exempt", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
             <p class="govuk-body">At the meeting the mediator will explain:</p>
             <ul class="govuk-list govuk-list--bullet">
               <li>how mediation works</li>
               <li>the benefits</li>
               <li>whether it's right for you</li>
               <li>the likely costs</li>
-              <li><a href="https://www.gov.uk/check-legal-aid">if you're eligible for mediation through legal aid</a>
+              <li><%= govuk_link_to "if you're eligible for mediation through legal aid", "https://www.gov.uk/check-legal-aid" %>
               </li>
               <li>other options available to you</li>
             </ul>
@@ -205,7 +201,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">3</span>
               <span aria-label=" - "></span>
             </span>
@@ -254,7 +250,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">4</span>
               <span aria-label=" - "></span>
             </span>
@@ -270,8 +266,7 @@
             <p class="govuk-body">This can be useful if your arrangements are long and complex or you think you need a
               more formal agreement with the other parent.</p>
             <p class="govuk-body">GOV.UK has more information about consent orders and
-              <a href="https://www.gov.uk/looking-after-children-divorce/if-you-agree">making your agreement legally
-                binding</a>.</p>
+              <%= govuk_link_to "making your agreement legally binding", "https://www.gov.uk/looking-after-children-divorce/if-you-agree" %>.</p>
           </div>
         </div>
       </div>
@@ -324,22 +319,22 @@
             <li>have a drug or alcohol problem that's affecting your children</li>
           </ul>
           <p class="govuk-body">
-            <a href="https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/">Find out more about child abuse and
-              neglect</a></p>
-          <p class="govuk-body"><a href="https://www.gov.uk/report-child-abuse-to-local-council">Report child abuse</a>
-            if you have any concerns and tell your children about <a href="https://www.childline.org.uk/">Childline</a>
+            <%= govuk_link_to "Find out more about child abuse and neglect", "https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/" %></p>
+          <p class="govuk-body">
+            <%= govuk_link_to "Report child abuse", "https://www.gov.uk/report-child-abuse-to-local-council" %>
+            if you have any concerns and tell your children about <%= govuk_link_to "Childline", "https://www.childline.org.uk/" %>
             so they can report any abuse themselves.</p>
           <p class="govuk-body">You can also
-            <a href="https://www.nspcc.org.uk/keeping-children-safe/reporting-abuse/report/report-abuse-online/">report
-              a concern about a child online</a> to the National Society for the Prevention of Cruelty to Children
+            <%= govuk_link_to "report a concern about a child online", "https://www.nspcc.org.uk/keeping-children-safe/reporting-abuse/report/report-abuse-online/" %>
+            to the National Society for the Prevention of Cruelty to Children
             (NSPCC).</p>
           <h3 class="govuk-heading-m">Domestic abuse</h3>
           <p class="govuk-body">Mediation with the other parent may not be suitable if you think they pose a threat to
             you or your children's safety.</p>
           <p class="govuk-body">Find out more about
-            <a href="http://www.refuge.org.uk/our-work/forms-of-violence-and-abuse/domestic-violence/">signs of domestic
-              violence</a> if you're unsure whether you're a victim.</p>
-          <p class="govuk-body"><a href="https://www.gov.uk/report-domestic-abuse">Report domestic violence</a> when
+            <%= govuk_link_to "signs of domestic violence", "http://www.refuge.org.uk/our-work/forms-of-violence-and-abuse/domestic-violence/" %> if you're unsure whether you're a victim.</p>
+          <p class="govuk-body">
+            <%= govuk_link_to "Report domestic violence", "https://www.gov.uk/report-domestic-abuse" %> when
             it's safe to do so and you think you're a victim.</p>
         </div>
       </div>
@@ -352,17 +347,12 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), '/collaborative-law' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
       </ul>
-      <div class="area_links__overview">
-        <h3 class="govuk-heading-m">Overview</h3>
-        <p class="govuk-body">
-          <%= govuk_link_to 'View all child arrangements options', '/' %>
-        </p>
-      </div>
+      <%= render "overview" %>
     </nav>
   </div>
 </section>

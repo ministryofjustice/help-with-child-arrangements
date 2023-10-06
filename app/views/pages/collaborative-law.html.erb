@@ -29,8 +29,7 @@
 
   <div class="govuk-grid-column-one-third">
     <div class="share_link">
-      <a href="mailto:?to=&body=Collaborative%20lawyers%20work%20with%20you%20and%20the%20other%20parent%20to%20resolve%20your%20issues%20out%20of%20court.%20You%20each%20hire%20a%20lawyer%20then%20all%20meet%20to%20negotiate%20face-to-face.%0D%0AThe%20collaborative%20process%20involves%20several%20steps%20but%20is%20usually%20quicker%20and%20cheaper%20than%20going%20to%20court.%0D%0A%0D%0AFind%20out%20more%20about%20collaborative%20law%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fcollaborative-law%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20collaborative%20law%20with%20you">Share
-        this page by email</a>
+      <%= govuk_link_to "Share this page by email", "mailto:?to=&body=Collaborative%20lawyers%20work%20with%20you%20and%20the%20other%20parent%20to%20resolve%20your%20issues%20out%20of%20court.%20You%20each%20hire%20a%20lawyer%20then%20all%20meet%20to%20negotiate%20face-to-face.%0D%0AThe%20collaborative%20process%20involves%20several%20steps%20but%20is%20usually%20quicker%20and%20cheaper%20than%20going%20to%20court.%0D%0A%0D%0AFind%20out%20more%20about%20collaborative%20law%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fcollaborative-law%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20collaborative%20law%20with%20you" %>
     </div>
 
     <div class="pros_cons pros_cons--header">
@@ -80,7 +79,7 @@
         <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
           <h2 class="govuk-heading-l">Collaborative law in practice</h2>
           <p class="govuk-visually-hidden">
-            <a href="https://www.youtube.com/watch?v=Cb2NcCNDJvg">Collaborative law in practice - Video on YouTube</a>
+            <%= govuk_link_to "Collaborative law in practice - Video on YouTube", "https://www.youtube.com/watch?v=Cb2NcCNDJvg" %>
           </p>
 
           <div aria-hidden="true" type="video" id="c_video_player">
@@ -101,7 +100,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">1</span>
               <span aria-label=" - "></span>
             </span>
@@ -132,7 +131,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">2</span>
               <span aria-label=" - "></span>
             </span>
@@ -157,7 +156,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">3</span>
               <span aria-label=" - "></span>
             </span>
@@ -185,7 +184,7 @@
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
           <h2 class="govuk-heading-m">
-            <span class="step__count Step__count--professional-mediation-step-1">
+            <span class="step__count step__count--professional-mediation-step-1">
               Step <span class="step__count__counter">4</span>
               <span aria-label=" - "></span>
             </span>
@@ -207,7 +206,7 @@
             <h3 class="govuk-heading-s">If there’s still no agreement</h3>
             <p class="govuk-body">If it looks like you won’t be able to reach an agreement, you and the other parent may
               need to consider
-              <a href="https://helpwithchildarrangements.service.justice.gov.uk/going-to-court">going to court</a>.</p>
+              <%= govuk_link_to "going to court", going_to_court_path %>.</p>
           </div>
         </div>
       </div>
@@ -236,17 +235,12 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
       <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), '/professional-mediation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), '/negotiating-between-parents' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), '/lawyer-negotiation' %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), '/going-to-court' %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
       </ul>
-      <div class="area_links__overview">
-        <h3 class="govuk-heading-m">Overview</h3>
-        <p class="govuk-body">
-          <%= govuk_link_to 'View all child arrangements options', '/' %>
-        </p>
-      </div>
+      <%= render "overview" %>
     </nav>
   </div>
 </section>
