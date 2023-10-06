@@ -40,8 +40,10 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install packages
-        run: |
-          yarn install --pure-lockfile
+        run: yarn install --frozen-lockfile
+
+      - name: Precompile assets
+        run: bin/rails assets:precompile
 
       - name: Lint stylesheets
         run: yarn run lint
