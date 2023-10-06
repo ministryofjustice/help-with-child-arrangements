@@ -14,7 +14,7 @@ spec:
     - staging.help-with-child-arrangements.service.justice.gov.uk
     secretName: help-with-child-arrangements-cert
   rules:
-  - host: staging.helpwithchildarrangements.service.justice.gov.uk
+  - host: staging.help-with-child-arrangements.service.justice.gov.uk
     http:
       paths:
       - path: /
