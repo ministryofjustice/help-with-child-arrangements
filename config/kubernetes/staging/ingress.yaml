@@ -11,9 +11,21 @@ metadata:
 spec:
   tls:
   - hosts:
+    - staging-help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
+  - hosts:
     - staging.help-with-child-arrangements.service.justice.gov.uk
     secretName: help-with-child-arrangements-staging-cert-khg8z
   rules:
+  - host: staging-help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: help-with-child-arrangements-service
+            port:
+              number: 3000
   - host: staging.help-with-child-arrangements.service.justice.gov.uk
     http:
       paths:
