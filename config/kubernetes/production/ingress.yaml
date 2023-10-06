@@ -6,6 +6,8 @@ metadata:
   annotations:
     external-dns.alpha.kubernetes.io/set-identifier: help-with-child-arrangements-ingress-help_with_child_arrangements-production-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
+    nginx.ingress.kubernetes.io/auth-type: basic
+    nginx.ingress.kubernetes.io/auth-secret: app-secrets
 spec:
   tls:
   - hosts:
