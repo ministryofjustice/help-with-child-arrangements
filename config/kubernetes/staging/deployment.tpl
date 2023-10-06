@@ -19,12 +19,6 @@ spec:
           ports:
             - containerPort: 3000
           command: ["./config/docker/entrypoint-webapp.sh"]
-          env:
-            - name: DATABASE_URL
-              valueFrom:
-                secretKeyRef:
-                  name: rds-postgresql-instance-output
-                  key: url
           envFrom:
             - configMapRef:
                 name: environment-variables
@@ -52,20 +46,3 @@ spec:
                   value: "on"
             periodSeconds: 60
             timeoutSeconds: 15
-      initContainers:
-        - name: pending-migrations
-          image: ${ECR_URL}:${IMAGE_TAG}
-          command:
-            - rake
-            - db:abort_if_pending_migrations
-          env:
-            - name: DATABASE_URL
-              valueFrom:
-                secretKeyRef:
-                  name: rds-postgresql-instance-output
-                  key: url
-          envFrom:
-          - configMapRef:
-              name: environment-variables
-          - secretRef:
-              name: app-secrets

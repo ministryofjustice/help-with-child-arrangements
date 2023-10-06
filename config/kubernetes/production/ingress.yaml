@@ -11,7 +11,7 @@ spec:
   - hosts:
     - help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
   - hosts:
-    - helpwithchildarrangements.service.justice.gov.uk
+    - help-with-child-arrangements.service.justice.gov.uk
     secretName: help-with-child-arrangements-cert
   rules:
   - host: help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
