@@ -62,7 +62,7 @@ COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
 
 # Create log and tmp
 RUN mkdir -p log tmp
-RUN chown -R appuser:appgroup db log tmp
+RUN chown -R appuser:appgroup log tmp
 
 # Set user
 USER 1000
