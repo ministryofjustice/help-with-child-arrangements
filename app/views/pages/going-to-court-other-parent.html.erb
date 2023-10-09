@@ -1,0 +1,119 @@
+<% content_for :page_title do %>
+  <%= t('page_title.court_other_parent') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.court_other_parent') => false }) %>
+<% end %>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl"><%= t('page_title.court_other_parent') %></h1>
+    <p class="govuk-body-lead">The other parent may have told you they will take you to court or you may have received court papers. It’s important to understand what the court process might involve.</p>
+
+    <section id="going-to-court-other-parent-before" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">Before they’ve applied</h2>
+      <p class="govuk-body">
+        Before the other parent can apply for a court order about your child arrangements, they must show they’ve attended a meeting about mediation, <%= govuk_link_to "except in certain cases", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.
+        This is called a MIAM or Mediation Information and Assessment Meeting. The mediator will <%= govuk_link_to "invite you to a meeting too", "/professional-mediation-other-parent" %>.
+      </p>
+      <p class="govuk-body">
+        There's usually a better outcome for children and parents if you can reach an agreement without going to court.
+        So if there are no safety concerns, you should talk to the other parent about different options such as <%= govuk_link_to "negotiation", "/negotiating-between-parents" %> or <%= govuk_link_to "professional mediation", "/professional-mediation" %>.
+      </p>
+    </section>
+
+    <section id="going-to-court-other-parent-after" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">After they've applied</h2>
+      <p class="govuk-body">The court will send you the documents, including a ‘notice of proceedings’. You’ll need to respond within 14 days using a <%= govuk_link_to "form C7", "https://www.gov.uk/government/publications/form-c7-acknowledgment" %>.</p>
+      <p class="govuk-body">You’ll need to choose whether to <%= govuk_link_to "hire a lawyer", "https://solicitors.lawsociety.org.uk" %> or <%= govuk_link_to "represent yourself", "https://www.gov.uk/represent-yourself-in-court" %>.</p>
+      <p class="govuk-body">The court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). It usually takes around 4 to 6 weeks after the application to get a date.</p>
+      <p class="govuk-body">An advisor from the <%= govuk_link_to "Children and Family Court Advisory and Support Service (Cafcass)", "https://www.cafcass.gov.uk" %> will contact you and gather information before the first hearing.</p>
+      <p class="govuk-body">The information includes:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>a social services and criminal record check on you and the other parent</li>
+        <li>any concerns you and the other parent may have about the safety and welfare of your children</li>
+      </ul>
+    <section>
+
+     <section id="going-to-court-other-parent-going-to-court" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">Going to court</h2>
+      <p class="govuk-body">You’ll have to <%= govuk_link_to "attend court", "https://www.gov.uk/represent-yourself-in-court" %> for any hearings. You can ask to appear in a different room in court from your ex-partner.</p>
+      <p class="govuk-body">At the first hearing the judge will see if there’s still a chance you can reach an agreement with the other parent.</p>
+      <p class="govuk-body">They may ask you to try again to reach an agreement, for example by going to a meeting with a mediator.</p>
+      <p class="govuk-body">You may have to go on a course called a <%= govuk_link_to "‘Separated Parents Information Programme’", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/separated-parents-information-programme/" %>.</p>
+      <p class="govuk-body">The court can ask Cafcass to provide a report on your case to help decide what’s best for the child. The Cafcass officer may ask your child about their feelings. You’ll get a copy of the report when it’s written.</p>
+      <p class="govuk-body">If you cannot agree, there may be further court hearings that you need to attend and you may need to give evidence.</p>
+      <p class="govuk-body">The judge or magistrate will always put the welfare of children first when making the decision about child arrangements. They will think about the:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>child’s wishes and feelings</li>
+        <li>child’s physical, emotional and educational needs</li>
+        <li>effect any changes may have on the child</li>
+        <li>child’s age, gender, characteristics and background</li>
+        <li>possible risk of harm to the child</li>
+        <li>ability of parents to meet the child’s needs</li>
+        <li>orders the court has the power to make</li>
+      </ul>
+      <p class="govuk-body">It’s different for every family, but the court will usually try to make sure that children see both parents - unless there's a risk of violence or abuse. A court will only make an order if they think it’s in the best interests of the child.</p>
+      <p class="govuk-body">You’ll have to stick to whatever the court decides - even if you don’t agree with it - unless you and your ex-partner both agree to changes.</p>
+      <p class="govuk-body"><%= govuk_link_to "Read about changing or enforcing an order", "https://www.gov.uk/looking-after-children-divorce/change-or-enforce-an-order" %></p>
+    </section>
+  </div>
+</section>
+
+<section id="going-to-court-other-parent-video" class="section_video govuk-grid-row" data-block-name="going-to-court-other-parent-video">
+  <div class="govuk-grid-column-full">
+    <div class="section_video__wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
+          <h2 class="govuk-heading-l">After Cafcass contacts you</h2>
+          <p class="govuk-visually-hidden">
+            <%= govuk_link_to "After Cafcass contacts you - Video on YouTube", "https://www.youtube.com/watch?v=Fnscn3Yt3RU" %>
+          </p>
+
+          <div aria-hidden="true" type="video" id="c_video_player">
+            <div class="section_video__video_wrapper">
+              <iframe title="After Cafcass contacts you" src="https://www.youtube.com/embed/Fnscn3Yt3RU?enablejsapi=1&origin=https://helpwithchildarrangements.service.justice.gov.uk" allowfullscreen="" data-gtm-yt-inspected-8="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <div class="area_links">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="area_links__heading govuk-heading-l">Going to court resources</h2>
+          <p class="govuk-body">
+            Telephone: 01689 820272 (Resolution)<br>
+            <%= govuk_link_to "Check if you can get legal aid", "https://www.gov.uk/check-legal-aid" %><br>
+            <%= govuk_link_to "Find a legal adviser near you", "https://www.gov.uk/find-a-legal-adviser" %><br>
+            <%= govuk_link_to "Check if you can get free legal help", "https://weareadvocate.org.uk/apply-for-help.html" %><br>
+            <%= govuk_link_to "Legal costs: free or affordable help", "https://www.citizensadvice.org.uk/wales/law-and-courts/legal-system/finding-free-or-affordable-legal-help/" %>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="other-ways-to-reach-an-agreement" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
+      <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
+      <ul class="area_links__list govuk-list">
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
+      </ul>
+      <%= render "overview" %>
+    </nav>
+  </div>
+</section>
