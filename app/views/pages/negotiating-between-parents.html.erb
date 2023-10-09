@@ -171,17 +171,9 @@
   </div>
 </section>
 
-<section id="other-ways-to-reach-an-agreement" class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
-      <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
-      <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
-      </ul>
-      <%= render "overview" %>
-    </nav>
-  </div>
-</section>
+<%= render "shared/agreement_links", links: [
+  govuk_link_to(t('page_title.mediation'), professional_mediation_path),
+  govuk_link_to(t('page_title.lawyer_negotiation'), lawyer_negotiation_path),
+  govuk_link_to(t('page_title.collaborative'), collaborative_law_path),
+  govuk_link_to(t('page_title.court'), going_to_court_path)]
+%>
