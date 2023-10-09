@@ -129,30 +129,36 @@
   </div>
 </div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
-    <section id="emotional-support-resources" class="ResourcesSection">
-      <h2 class="govuk-heading-l">Getting emotional support resources</h2>
-      <p class="govuk-body"><%= govuk_link_to 'Find out more about counselling', 'https://www.counselling-directory.org.uk/separation.html' %></p>
-      <p class="govuk-body">Relate has a
-        <%= govuk_link_to 'free online chat service', 'https://www.relate.org.uk/relationship-help/talk-someone/live-chat-counsellor' %>
-        . Sessions last around 25 minutes.</p>
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
+          <section id="emotional-support-resources" class="ResourcesSection">
+            <h2 class="govuk-heading-l">Getting emotional support resources</h2>
+            <p class="govuk-body"><%= govuk_link_to 'Find out more about counselling', 'https://www.counselling-directory.org.uk/separation.html' %></p>
+            <p class="govuk-body">Relate has a
+              <%= govuk_link_to 'free online chat service', 'https://www.relate.org.uk/relationship-help/talk-someone/live-chat-counsellor' %>
+              . Sessions last around 25 minutes.</p>
 
-      <p class="govuk-body">Relate also has a
-        <%= govuk_link_to 'telephone service', 'https://www.relate.org.uk/relationship-help/talk-someone/telephone-counselling' %>
-        that costs &pound;55 per hour.</p>
+            <p class="govuk-body">Relate also has a
+              <%= govuk_link_to 'telephone service', 'https://www.relate.org.uk/relationship-help/talk-someone/telephone-counselling' %>
+              that costs &pound;55 per hour.</p>
 
-      <p class="govuk-body">
-        <%= govuk_link_to 'Getting it right for children', 'https://click.clickrelationships.org/content/parenting-apart/course-getting-it-right-for-children/' %>
-        is a free programme which uses real life situations to show how things can go wrong - and how you can do them
-        better.</p>
-    </section>
+            <p class="govuk-body">
+              <%= govuk_link_to 'Getting it right for children', 'https://click.clickrelationships.org/content/parenting-apart/course-getting-it-right-for-children/' %>
+              is a free programme which uses real life situations to show how things can go wrong - and how you can do them
+              better.</p>
+          </section>
+        </div>
+      </div>
+    </nav>
   </div>
-</div>
+</section>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <nav class="area_links" data-block-name="preparing-collection">
+    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <h2 class="area_links__heading govuk-heading-l">Other ways to prepare</h2>
       <ul class="area_links__list govuk-list">
         <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.involving'), involving_children_path %></li>
