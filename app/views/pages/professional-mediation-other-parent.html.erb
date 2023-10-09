@@ -1,0 +1,117 @@
+<% content_for :page_title do %>
+  <%= t('page_title.mediation_other') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.mediation_other') => false }) %>
+<% end %>
+
+<section class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl"><%= t('page_title.mediation_other') %></h1>
+    <p class="govuk-body-lead">You may have been contacted by a mediator or the other parent may have asked you to try mediation. It’s important to understand what mediation is and how it could help your situation.</p>
+    <p class="govuk-body">The other parent may have approached a professional mediator because they want help to reach a decision about arrangements for your children. Or you may have been invited to a ‘Mediation Information and Assessment Meeting’ or ‘MIAM’, which is a legal requirement before the other parent can apply to court.</p>
+
+    <section id="going-to-court-other-parent-before" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">Before they’ve applied</h2>
+      <p class="govuk-body">
+        Before the other parent can apply for a court order about your child arrangements, they must show they’ve attended a meeting about mediation, <%= govuk_link_to "except in certain cases", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.
+        This is called a MIAM or Mediation Information and Assessment Meeting. The mediator will <%= govuk_link_to "invite you to a meeting too", "/professional-mediation-other-parent" %>.
+      </p>
+      <p class="govuk-body">
+        There's usually a better outcome for children and parents if you can reach an agreement without going to court.
+        So if there are no safety concerns, you should talk to the other parent about different options such as <%= govuk_link_to "negotiation", "/negotiating-between-parents" %> or <%= govuk_link_to "professional mediation", "/professional-mediation" %>.
+      </p>
+    </section>
+
+    <section id="mediation-other-should-i-go" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">Should I go to mediation?</h2>
+      <p class="govuk-body">It may have come as a surprise to you that your ex wants to change something regarding the arrangements for your child or children. A letter from a mediator may have been completely unexpected. If you’re fine with the arrangements as they are, why should you contact the mediator?</p>
+      <p class="govuk-body">Mediation can help you and the other parent resolve problems without going to court. Applying for a court order often takes longer and may be more expensive and stressful. Mediation could just be an opportunity to talk to someone independent about your parenting situation.</p>
+      <p class="govuk-body">You should contact the mediator to find out more. Don’t worry that the other parent has chosen the mediator, they’ll always be completely independent. If you’d prefer to <%= govuk_link_to "use another mediator", "https://www.familymediationcouncil.org.uk/find-local-mediator/" %>, you could find and agree on one together.</p>
+      <p class="govuk-body">If you’ve been invited to a MIAM, you’re expected to go - unless <%= govuk_link_to "you’re exempt", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>. If you don’t attend, the mediator can sign a document allowing the other parent to <%= govuk_link_to "apply for a court order", going_to_court_path %> about your child arrangements.</p>
+      <p class="govuk-body">In mediation, both you and the other parent will be able to raise things that are important to you and work to agree a solution. If a case goes to court, a judge will decide for you and it will be legally binding.</p>
+      <p class="govuk-body">Family mediation works for many people but it is not right for everyone.   It will not be suitable if, for example, there’s been <a href="https://www.refuge.org.uk/our-work/forms-of-violence-and-abuse/domestic-violence/">domestic abuse</a> or you’re worried about the <%= govuk_link_to "safety of the children", "https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/" %>. The mediator will help you understand if it could be suitable for your situation.</p>
+      <p class="govuk-body">If there are no safety concerns, however, there are other ways you could try and reach an agreement if you don’t think mediation is right for you. The cheapest and easiest way to make arrangements is to <%= govuk_link_to "negotiate with the other parent", negotiating_between_parents_path %>. There are free tools and services that can help you.</p>
+    <section>
+
+     <section id="mediation-other-what-happens" class="SectionArea">
+      <h2 class="area_links__heading govuk-heading-l">What happens in mediation?</h2>
+      <p class="govuk-body">If you go to mediation, you’ll find out what the other parent wants to talk about. You’ll get the opportunity to talk about the situation from your point of view too. You don’t have to see the other parent if you don’t want to (you can be in separate rooms), and the mediator can arrange for you to arrive at different times.</p>
+      <p class="govuk-body">The mediator will be independent, even if they operate from a solicitor’s office, and won’t take sides. They’ll support you both.</p>
+      <p class="govuk-body">Whatever you say in mediation is confidential. Information won’t be shared with anyone else without your permission (unless for example, there’s a safeguarding risk or a criminal offence is disclosed).</p>
+      <p class="govuk-body">You and your ex will be able to raise things that are important to you and the mediator can help create a list of topics to talk through.</p>
+      <p class="govuk-body">Mediation can help you stay in control. It’s voluntary and no-one will make you do anything against your wishes.</p>
+      <p class="govuk-body">The mediator will help you and the other parent (separately or together) go through all your issues, think of your options, decide whether they would work well in practice and come to an agreement about what's best. They can also explain how you can make your agreement legally binding, if you want to.</p>
+    </section>
+  </div>
+</section>
+
+<div class="govuk-grid-row">
+  <section id="mediation-other-cost" class="SectionArea">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-3">
+      <h2 class="area_links__heading govuk-heading-l">How much does it cost?</h2>
+      <p class="govuk-body">Mediation can be much cheaper than going to court.</p>
+      <p class="govuk-body">Advice Now has a <%= govuk_link_to "guide to using mediation following separation", "https://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break" %>, which contains information about costs.</p>
+    </div>
+
+    <div class="cost govuk-grid-column-one-third govuk-!-margin-top-3">
+      <h4 class="cost__heading govuk-heading-s">Average cost of MIAM per person</h4>
+      <p class="cost__amount govuk-heading-l"><strong>&pound;90</strong></p>
+      <p class="govuk-body-xs">It may be cheaper if you attend together.</p>
+    </div>
+  </section>
+
+  <section id="mediation-other-cost2" class="SectionArea">
+    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-3">
+      <p>You may not have to pay for the MIAM or mediation if you or the other parent are <a href="https://www.gov.uk/check-legal-aid">eligible for legal aid</a>. The mediator can help you check.</p>
+      <p>First you have a MIAM, which is the first meeting. The other parent sees the mediator too. You can have your MIAM on your own with the mediator so you can talk about any concerns you have.</p>
+      <p>If you continue with mediation, it usually takes place with the other parent over several sessions. You can be in separate rooms if you prefer. Each session lasts about 90 minutes.</p>
+    </div>
+
+    <div class="cost govuk-grid-column-one-third govuk-!-margin-top-3">
+      <h4 class="cost__heading govuk-heading-s">Average cost of mediation per person</h4>
+      <p class="cost__amount govuk-heading-l"><strong>&pound;480</strong></p>
+      <p class="govuk-body-xs">Estimated cost based on an average of <strong>3</strong> sessions. Fees may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income. <a href="https://www.nfm.org.uk/mediation-faq/can-i-get-legal-aid/">Legal aid may be available for mediation</a>.</p>
+    </div>
+  </section>
+</div>
+
+<section id="professional-mediation-other-video" class="section_video govuk-grid-row" data-block-name="professional-mediation-other-video">
+  <div class="govuk-grid-column-full">
+    <div class="section_video__wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
+          <h2 class="govuk-heading-l">Understanding family mediation</h2>
+          <p class="govuk-visually-hidden">
+            <%= govuk_link_to "Understanding family mediation - Video on YouTube", "https://www.youtube.com/watch?v=zYhWdwazCZA" %>
+          </p>
+
+          <div aria-hidden="true" type="video" id="c_video_player">
+            <div class="section_video__video_wrapper">
+              <iframe id="understanding_family_mediation" title="Understanding Family Mediation" src="https://www.youtube.com/embed/zYhWdwazCZA?enablejsapi=1&amp;origin=https://helpwithchildarrangements.service.justice.gov.uk" allowfullscreen="" data-gtm-yt-inspected-8="true"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render "shared/mediation_resources" %>
+
+<section id="other-ways-to-reach-an-agreement" class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
+      <h2 class="area_links__heading govuk-heading-l">Other ways to reach an agreement</h2>
+      <ul class="area_links__list govuk-list">
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.mediation'), professional_mediation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.negotiation'), negotiating_between_parents_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.lawyer_negotiation'), lawyer_negotiation_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.collaborative'), collaborative_law_path %></li>
+        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.court'), going_to_court_path %></li>
+      </ul>
+      <%= render "overview" %>
+    </nav>
+  </div>
+</section>
