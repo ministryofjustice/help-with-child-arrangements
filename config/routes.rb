@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get "/about/accessibility", to: "about#accessibility"
   get "/about/cookies", to: "about#cookies"
+  get "/about/privacy", to: "about#privacy"
 
   get "/collaborative-law", to: "pages#collaborative-law"
   get "/emotional-support", to: "pages#emotional-support"
