@@ -21,7 +21,7 @@ gem "sprockets", "~> 4.2"
 gem "sprockets-rails", "~> 3.4"
 
 group :test do
-  gem "simplecov", require: false
+  gem "rails-controller-testing"
 end
 
 group :development, :test do
