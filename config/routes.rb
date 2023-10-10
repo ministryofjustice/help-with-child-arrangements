@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get "/healthcheck/ready", to: GovukHealthcheck.rack_response
 
   get "/about/accessibility", to: "about#accessibility"
+  get "/about/cookies", to: "about#cookies"
+  get "/about/privacy", to: "about#privacy"
+  get "/about/terms-conditions", to: "about#terms-conditions"
 
   get "/collaborative-law", to: "pages#collaborative-law"
   get "/emotional-support", to: "pages#emotional-support"

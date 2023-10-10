@@ -1,0 +1,96 @@
+<% content_for :page_title do %>
+  <%= t('page_title.cookies') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.cookies') => false }) %>
+<% end %>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Cookies</h1>
+    <p class="govuk-body">This guide puts small files (known as 'cookies') onto your computer.</p>
+    <p class="govuk-body">The cookies help us:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>understand how you interact with the guide, so we can make improvements</li>
+      <li>remember what notifications you've seen so you're not shown them again</li>
+    </ul>
+    <p class="govuk-body"><%= govuk_inset_text(text: "The cookies aren't used to identify you personally.") %></p>
+    <p class="govuk-body">Find out <%= govuk_link_to "how to manage cookies", "http://www.aboutcookies.org/" %>.</p>
+
+    <h2 class="govuk-heading-l">The cookies we use</h2>
+    <h3 class="govuk-heading-m">Google Analytics cookie</h3>
+    <p class="govuk-body">We use Google Analytics to collect information about how you interact with the guide. This information helps us to update and improve the guide.</p>
+    <p class="govuk-body">Google Analytics stores information about:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>the pages you visit</li>
+      <li>how long you spend on each page</li>
+      <li>how you got to the guide</li>
+      <li>what you click on while you're reading the guide</li>
+    </ul>
+    <p class="govuk-body"><%= govuk_inset_text(text: "We don't allow Google to use or share our analytics data.") %></p>
+    <p class="govuk-body">You can <%= govuk_link_to "opt out of Google Analytics cookies", "https://tools.google.com/dlpage/gaoptout" %>.</p>
+
+    <%= govuk_table do |table| %>
+      <%= table.with_head do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "Name") %>
+          <%= row.with_cell(text: "Purpose") %>
+          <%= row.with_cell(text: "Expires") %>
+        <% end %>
+      <% end %>
+      <%= table.with_body do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "_ga") %>
+          <%= row.with_cell(text: "A randomly generated reference is used to identify unique users and inform referring sites, visitor and session counts") %>
+          <%= row.with_cell(text: "2 years") %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <h3 class="govuk-heading-m">Introductory message cookie</h3>
+    <p class="govuk-body">When you first read the guide, you may see a pop-up 'welcome' message. Once you've seen the message, we store a cookie on your computer so it knows not to show it again.</p>
+
+    <%= govuk_table do |table| %>
+      <%= table.with_head do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "Name") %>
+          <%= row.with_cell(text: "Purpose") %>
+          <%= row.with_cell(text: "Expires") %>
+        <% end %>
+      <% end %>
+      <%= table.with_body do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "seen_cookie_message") %>
+          <%= row.with_cell(text: "Saves a message to let us know you've seen our cookie message") %>
+          <%= row.with_cell(text: "1 month") %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    <h3 class="govuk-heading-m">YouTube videos</h3>
+    <p class="govuk-body">We use YouTube to provide videos on some pages of the guide. YouTube sets cookies when you visit one of these pages.</p>
+
+    <%= govuk_table do |table| %>
+      <%= table.with_head do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "Name") %>
+          <%= row.with_cell(text: "Purpose") %>
+          <%= row.with_cell(text: "Expires") %>
+        <% end %>
+      <% end %>
+      <%= table.with_body do |head| %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "_use_hitbox") %>
+          <%= row.with_cell(text: "Randomly generated number that identifies your browser") %>
+          <%= row.with_cell(text: "When you close your browser") %>
+        <% end %>
+        <%= head.with_row do |row| %>
+          <%= row.with_cell(text: "VISITOR_INFO1_LIVE") %>
+          <%= row.with_cell(text: "Lets YouTube count the views of embedded YouTube videos") %>
+          <%= row.with_cell(text: "9 months") %>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
