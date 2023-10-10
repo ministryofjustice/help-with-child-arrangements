@@ -1,0 +1,32 @@
+<% content_for :page_title do %>
+  <%= t('page_title.terms') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.terms') => false }) %>
+<% end %>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Terms and conditions</h1>
+
+    <p class="govuk-body-l">By reading this guide you agree to these terms and conditions.</p>
+
+    <h2 class="govuk-heading-l">Responsibility for the guide</h2>
+    <p class="govuk-body">The Ministry of Justice (MoJ) runs this guide.</p>
+    <p class="govuk-body">We try to make sure the information we provide is accurate and complete and the guide is always available and virus free.</p>
+    <p class="govuk-body">The MoJ accepts no liability for:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>you being unable to access the guide (for example due to high demand or because we've taken it down for maintenance)</li>
+      <li>indirect damages arising from you reading the guide or relying on its content</li>
+      <li>the content and availability of external websites that link to the guide or which link from it</li>
+    </ul>
+
+    <h2 class="govuk-heading-l">Public beta</h2>
+    <p class="govuk-body">This guide is currently in 'public beta'. This means you're looking at the first version of it.</p>
+    <p class="govuk-body">Something that's in 'public beta' isn't open to everyone or may not work for everyone. We do this so we can test and make improvements before releasing it to more people.</p>
+
+    <h2 class="govuk-heading-l">Scotland and Northern Ireland</h2>
+    <p class="govuk-body">Some parts of this guide only apply to England and Wales. For example, if you want to go to court the process will be different in <%= govuk_link_to "Scotland", "https://www.mygov.scot/organisations/scottish-courts-and-tribunals-service" %> and <%= govuk_link_to "Northern Ireland", "https://www.nidirect.gov.uk/articles/solicitors-and-courts" %>.</p>
+  </div>
+</div>
