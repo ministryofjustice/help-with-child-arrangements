@@ -1,0 +1,41 @@
+<% content_for :page_title do %>
+  <%= t('page_title.privacy') %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.privacy') => false }) %>
+<% end %>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Privacy Policy</h1>
+
+    <p class="govuk-body-l">When you read this guide certain information or data about you is collected.</p>
+    <p class="govuk-body">This includes:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>any questions or feedback you leave</li>
+      <li>your email address (if you leave feedback)</li>
+      <li>your IP address, and details of which version of web browser you used</li>
+      <li>information on how you interact with the guide</li>
+    </ul>
+
+    <p class="govuk-body">This helps us to:</p>
+    <ul class="govuk-list govuk-list--bullet">
+      <li>improve the guide by monitoring how you use it</li>
+      <li>respond to any feedback or questions you send us, if you've asked us to</li>
+    </ul>
+
+    <p class="govuk-body">We can't identify you using your data.</p>
+    <h3 class="govuk-heading-m">Where your data is stored</h3>
+    <p class="govuk-body">Any information you provide is held by <%= govuk_link_to "SurveyMonkey", "https://www.surveymonkey.co.uk/" %>. Check the <%= govuk_link_to "SurveyMonkey privacy policy", "https://www.surveymonkey.co.uk/mp/policy/privacy-policy/" %> to find out what it does with your information.</p>
+
+    <h3 class="govuk-heading-m">Links to other websites</h3>
+    <p class="govuk-body">This privacy policy only applies to this guide. It doesn't cover the services and websites that we link to.</p>
+
+    <h3 class="govuk-heading-m">Following a link to another website</h3>
+    <p class="govuk-body">If you go to another website from this guide, read the privacy policy on that website to find out what it does with your information.</p>
+
+    <h3 class="govuk-heading-m">Following a link to this guide from another website</h3>
+    <p class="govuk-body">If you come to this guide from another website, we may receive personal information about you from the other website. Read the privacy policy of that website to find out more.</p>
+  </div>
+</div>

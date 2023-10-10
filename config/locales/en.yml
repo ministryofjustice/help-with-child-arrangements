@@ -2,13 +2,11 @@ en:
   service:
     name: Get help with child arrangements - GOV.UK
 
-  footer:
-    accessibility: Accessibility statement
-    help: Help
-    cookie: Cookie policy
-
   page_title:
-    accessibility: Accessibility statement
+    accessibility: Accessibility
+    cookies: Cookies
+    privacy: Privacy
+    terms: Terms and conditions
     involving: Putting your children first
     responsibility: Your parental responsibility
     support: Getting emotional support
