@@ -4,27 +4,7 @@
 @import "govuk-selectors";
 @import "overrides";
 
-
 :root {
-  --pros-cons-background: var(--grey-4);
-  --step-count-color: var(--govuk-black);
-  --summary-area-concerning-background: var(--grey-4);
-
-  --section-divider {
-    border-top: var(--border-divider);
-    margin-top: 2.5rem;
-  }
-
-  --section-heading {
-    margin-top: 2.5rem;
-  }
-
-  --section-grid {
-    @media (--kit-mlarge) {
-      padding-right: 35%;
-    }
-  }
-
   --non-standard-heading {
     margin-bottom: 0;
     page-break-after: avoid;

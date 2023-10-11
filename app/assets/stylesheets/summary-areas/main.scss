@@ -44,12 +44,10 @@
   &__concerning {
     box-sizing: border-box;
     padding: 1.5rem 1.5rem 2rem;
-    background: var(--summary-area-concerning-background);
+    background: var(--grey-4);
 
     &__heading {
       margin-top: 0;
-
-
     }
   }
 
@@ -87,8 +85,8 @@
 @media print {
   .summary_area__concerning__heading,
   .summary_area__involvement__heading,
-  .summary_area_USP__heading,
-  .area__USP__heading {
+  .summary_area_usp__heading,
+  .area__usp__heading {
     @apply --non-standard-heading;
   }
 
