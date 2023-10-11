@@ -1,14 +1,6 @@
-<% content_for :page_title do %>
-  <%= t('page_title.privacy') %>
-<% end %>
-
-<% content_for :breadcrumbs do %>
-  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.privacy') => false }) %>
-<% end %>
-
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl">Privacy Policy</h1>
+    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
     <p class="govuk-body-l">When you read this guide certain information or data about you is collected.</p>
     <p class="govuk-body">This includes:</p>
