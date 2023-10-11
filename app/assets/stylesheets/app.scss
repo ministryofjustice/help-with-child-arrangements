@@ -2,7 +2,11 @@ $govuk-global-styles: true;
 $govuk-new-link-styles: true;
 
 @import "govuk-frontend/govuk/all";
-@import "utils/overrides";
+@import "area-links/main";
+@import "costs/main";
+@import "pros-cons/main";
+@import "section-video/main";
 @import "share-link/main";
-@import "area";
-@import "summary";
+@import "step/main";
+@import "summary-areas/main";
+@import "utils/app";
