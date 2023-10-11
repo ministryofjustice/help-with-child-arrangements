@@ -1,0 +1,13 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
+      <h2 class="area_links__heading govuk-heading-l"><%= title %></h2>
+      <ul class="area_links__list govuk-list">
+        <% links.each do |link| %>
+          <li class="govuk-list--spaced"><%= link %></li>
+        <% end %>
+      </ul>
+      <%= render "shared/overview" %>
+    </nav>
+  </div>
+</div>

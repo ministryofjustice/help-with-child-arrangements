@@ -47,15 +47,7 @@
   </div>
 </div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
-    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
-      <h2 class="area_links__heading govuk-heading-l">Other ways to prepare</h2>
-      <ul class="area_links__list govuk-list">
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.involving'), involving_children_path %></li>
-        <li class="govuk-list--spaced"><%= govuk_link_to t('page_title.support'), emotional_support_path %></li>
-      </ul>
-      <%= render "overview" %>
-    </nav>
-  </div>
-</div>
+<%= render "shared/prepare_links", links: [
+  govuk_link_to(t('page_title.involving'), involving_children_path),
+  govuk_link_to(t('page_title.support'), emotional_support_path)]
+%>
