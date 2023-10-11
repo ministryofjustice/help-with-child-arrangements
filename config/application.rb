@@ -37,7 +37,5 @@ module HelpWithChildArrangements
     config.assets.paths << Rails.root.join("node_modules/govuk-frontend/govuk/assets")
 
     config.exceptions_app = routes
-
-    config.allowlisted_ips = []
   end
 end
