@@ -1,4 +1,4 @@
-class PingController < ActionController::Base # rubocop:disable Rails/ApplicationController
+class PingController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
