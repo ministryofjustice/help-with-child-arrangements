@@ -1,14 +1,6 @@
-<% content_for :page_title do %>
-  <%= t('page_title.court_other') %>
-<% end %>
-
-<% content_for :breadcrumbs do %>
-  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.court_other') => false }) %>
-<% end %>
-
-<section class="govuk-grid-row">
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl"><%= t('page_title.court_other') %></h1>
+    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
     <p class="govuk-body-lead">The other parent may have told you they will take you to court or you may have received court papers. It's important to understand what the court process might involve.</p>
 

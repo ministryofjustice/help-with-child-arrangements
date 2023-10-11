@@ -1,14 +1,6 @@
-<% content_for :page_title do %>
-  <%= t('page_title.negotiation') %>
-<% end %>
-
-<% content_for :breadcrumbs do %>
-  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.negotiation') => false }) %>
-<% end %>
-
-<section class="govuk-grid-row">
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl"><%= t('page_title.negotiation') %></h1>
+    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
     <p class="govuk-body-lead">If there are no safety concerns, the cheapest and easiest way to make arrangements is to
       negotiate with the other parent. There are free tools and services that can help you.</p>

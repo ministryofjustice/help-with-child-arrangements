@@ -1,14 +1,6 @@
-<% content_for :page_title do %>
-  <%= t('page_title.collaborative') %>
-<% end %>
-
-<% content_for :breadcrumbs do %>
-  <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t('page_title.collaborative') => false }) %>
-<% end %>
-
 <section class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl"><%= t('page_title.collaborative') %></h1>
+    <h1 class="govuk-heading-xl"><%= t('.title') %></h1>
 
     <p class="govuk-body-lead">Collaborative lawyers work with you and the other parent to resolve your issues out of
       court. You each hire a lawyer then all meet to negotiate face-to-face.</p>

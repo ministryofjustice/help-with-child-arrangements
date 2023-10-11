@@ -2,18 +2,34 @@ en:
   service:
     name: Get help with child arrangements - GOV.UK
 
-  page_title:
-    accessibility: Accessibility
-    cookies: Cookies
-    privacy: Privacy Policy
-    terms: Terms and conditions
-    involving: Putting your children first
-    responsibility: Your parental responsibility
-    support: Getting emotional support
-    negotiation: Negotiation tools and services
-    mediation: Professional mediation
-    mediation_other: If the other parent wants you to go to mediation
-    lawyer_negotiation: Lawyer negotiation
-    collaborative: Collaborative law
-    court: Going to court
-    court_other: If the other parent is applying to court
+  about:
+    accessibility:
+      title: Accessibility
+    cookies:
+      title: Cookies
+    privacy:
+      title: Privacy Policy
+    terms-conditions:
+      title: Terms and conditions
+
+  pages:
+    collaborative-law:
+      title: Collaborative law
+    emotional-support:
+      title: Getting emotional support
+    going-to-court:
+      title: Going to court
+    going-to-court-other-parent:
+      title: If the other parent is applying to court
+    involving-children:
+      title: Putting your children first
+    lawyer_negotiation:
+      title: Lawyer negotiation
+    negotiating-between-parents:
+      title: Negotiation tools and services
+    parental-responsibility:
+      title: Your parental responsibility
+    professional-mediation:
+      title: Professional mediation
+    professional-mediation-other-parent:
+      title: If the other parent wants you to go to mediation
