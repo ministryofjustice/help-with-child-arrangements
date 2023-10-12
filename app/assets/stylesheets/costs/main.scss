@@ -11,16 +11,30 @@
 
   &__heading {
     margin-top: 0;
+
+    @media print {
+      @apply --non-standard-heading;
+    }
   }
 
   &__amount {
     margin-top: .25rem;
     margin-bottom: 1rem;
+
+    @media print {
+      @apply --non-standard-post-heading;
+      font-size: 14pt;
+    }
   }
 
   &__small_print p {
     font-size: 1.4rem;
     margin: 0 0 1.5rem;
+
+    @media print {
+      font-style: italic;
+      margin-top: -10pt;
+    }
   }
 
   @include govuk-media-query($from: tablet) {
