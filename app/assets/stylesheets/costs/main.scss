@@ -1,7 +1,6 @@
 .cost {
   border-left: var(--border-brand);
   padding-left: 1.5rem;
-  margin-bottom: 3rem;
 
   &--step {
     @include govuk-media-query($from: desktop) {
@@ -41,6 +40,6 @@
     border-left: none;
     border-top: var(--border-brand);
     padding-left: 0;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
   }
 }
