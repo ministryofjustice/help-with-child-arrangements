@@ -402,7 +402,7 @@ GEM
     psych (5.1.1)
       stringio
     public_suffix (5.0.3)
-    puma (6.3.1)
+    puma (6.4.0)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (3.0.8)
@@ -563,7 +563,7 @@ DEPENDENCIES
   govuk_design_system_formbuilder
   jbuilder
   jsbundling-rails (~> 1.1)
-  puma (~> 6.3)
+  puma (~> 6.4)
   rails (~> 7.1.1)
   rails-controller-testing
   rspec-rails
