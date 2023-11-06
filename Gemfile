@@ -10,7 +10,7 @@ gem "govuk_app_config"
 gem "govuk-components"
 gem "govuk_design_system_formbuilder"
 gem "jbuilder"
-gem "puma", "~> 6.3"
+gem "puma", "~> 6.4"
 gem "sentry-rails"
 gem "sentry-ruby"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
