@@ -157,7 +157,7 @@
             <h3 class="govuk-heading-s">Represent yourself</h3>
             <p class="govuk-body">You may choose to represent yourself because you'd prefer to speak to the judge directly or because you can't afford the legal fees.</p>
             <p class="govuk-body">If you can't afford legal representation, you can still ask a lawyer for advice at any time during the court process.</p>
-            <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to "how to represent yourself in court", 'https://www.gov.uk/represent-yourself-in-court' %>.
+            <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to "how to represent yourself in court", "https://www.gov.uk/represent-yourself-in-court" %>.
 
             <p class="govuk-body"><%= govuk_link_to "Support Through Court", "https://www.supportthroughcourt.org/" %> provides help for every stage of the court process for those without a lawyer.
             <p class="govuk-body"><%= govuk_link_to "Find a free legal advice clinic", "https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you" %>
@@ -189,9 +189,9 @@
           </h2>
 
           <div class="step__content  govuk-govspeak gv-s-prose">
-            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to 'MIAM', professional_mediation_path %>, unless <%= govuk_link_to "you're exempt","https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
+            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to "MIAM" professional_mediation_path %>, unless <%= govuk_link_to "you're exempt","https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
             <p class="govuk-body">The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p>
-            <p class="govuk-body">You will need to <%= govuk_link_to 'find a mediator', 'https://www.familymediationcouncil.org.uk/find-local-mediator/' %> to book a MIAM.</p>
+            <p class="govuk-body">You will need to <%= govuk_link_to "find a mediator", "https://www.familymediationcouncil.org.uk/find-local-mediator/" %> to book a MIAM.</p>
             <p class="govuk-body">Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>
           </div>
         </div>
@@ -303,8 +303,8 @@
 </section>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('pages.professional-mediation.title'), professional_mediation_path),
-  govuk_link_to(t('pages.negotiating-between-parents.title'), negotiating_between_parents_path),
-  govuk_link_to(t('pages.lawyer-negotiation.title'), lawyer_negotiation_path),
-  govuk_link_to(t('pages.collaborative-law.title'), collaborative_law_path)]
+  govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.lawyer-negotiation.title"), lawyer_negotiation_path),
+  govuk_link_to(t("pages.collaborative-law.title"), collaborative_law_path)]
 %>

@@ -15,8 +15,7 @@
         needs of your children as they grow older.</p>
 
       <p class="govuk-body">
-        <%= govuk_link_to 'Find out more about involving your children',
-                          'https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/childs-voice-separation/' %>
+        <%= govuk_link_to "Find out more about involving your children", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/childs-voice-separation/" %>
       </p>
     </section>
 
@@ -26,11 +25,10 @@
         and the other parent, if it's safe to do so.</p>
 
       <p class="govuk-body">
-        <%= govuk_link_to 'Research shows',
-                          'https://click.clickrelationships.org/content/parenting-apart/two-parents-two-homes' %> most
+        <%= govuk_link_to "Research shows", "https://click.clickrelationships.org/content/parenting-apart/two-parents-two-homes" %> most
         children think the parent who doesn't live with them is still an important part of their family.</p>
 
-      <p class="govuk-body">You can use a <%= govuk_link_to 'child contact centre', 'https://naccc.org.uk/' %> if you
+      <p class="govuk-body">You can use a <%= govuk_link_to "child contact centre", "https://naccc.org.uk/" %> if you
         don't live with your children and can't find somewhere to see them. There are around 350 across England and
         Wales.
       </p>
@@ -40,7 +38,7 @@
 
       <p class="govuk-body">In the letter you should ask for regular contact, suggesting possible days or times. If they
         refuse, ask whether they would consider
-        <%= govuk_link_to 'mediation', professional_mediation_path %>
+        <%= govuk_link_to "mediation", professional_mediation_path %>
         to resolve the issue.</p>
 
       <p class="govuk-body">Don't forget to send your letter by recorded delivery so you know the other parent has
@@ -53,11 +51,11 @@
 
       <h3 class="govuk-heading-s">Counselling</h3>
       <p class="govuk-body">Many schools provide support but some children might need further help from a
-        <%= govuk_link_to 'counsellor', 'https://www.counselling-directory.org.uk/childrelatedissues.html' %>. The type
+        <%= govuk_link_to "counsellor", "https://www.counselling-directory.org.uk/childrelatedissues.html" %>. The type
         of counselling varies depending on the child's age and if they have learning difficulties.</p>
 
       <h3 class="govuk-heading-s">Support online</h3>
-      <p class="govuk-body"><%= govuk_link_to 'Voices in the Middle', 'https://www.voicesinthemiddle.com/' %> is a
+      <p class="govuk-body"><%= govuk_link_to "Voices in the Middle", "https://www.voicesinthemiddle.com/" %> is a
         website that has advice from young people in a similar situation. There's a guide to further help if your
         children want it.</p>
     </section>
@@ -68,23 +66,23 @@
       </h2>
       <p class="govuk-body">In some situations it may not be in the child's best interests for parents to work out child
         arrangements. You'll probably need
-        to <%= govuk_link_to 'go to court', '/going-to-court' %>
+        to <%= govuk_link_to "go to court", "/going-to-court" %>
         if you're worried about the welfare of you or your children.
       </p>
       <p class="govuk-body">You should
-        <%= govuk_link_to 'report child abuse', 'https://www.gov.uk/report-child-abuse' %> or
-        <%= govuk_link_to 'domestic abuse', 'https://www.gov.uk/report-domestic-abuse' %>
+        <%= govuk_link_to "report child abuse", "https://www.gov.uk/report-child-abuse" %> or
+        <%= govuk_link_to "domestic abuse", "https://www.gov.uk/report-domestic-abuse" %>
         if you have any concerns.
       </p>
       <p class="govuk-body">Read more about the
-        <%= govuk_link_to 'signs of child abuse', 'https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/' %> and
-        <%= govuk_link_to 'domestic abuse', 'http://www.refuge.org.uk/get-help-now/recognising-abuse/' %>.
+        <%= govuk_link_to "signs of child abuse", "https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/" %> and
+        <%= govuk_link_to "domestic abuse", "http://www.refuge.org.uk/get-help-now/recognising-abuse/" %>.
       </p>
     </section>
   </div>
 </div>
 
 <%= render "shared/prepare_links", links: [
-  govuk_link_to(t('pages.parental-responsibility.title'), parental_responsibility_path),
-  govuk_link_to(t('pages.emotional-support.title'), emotional_support_path)]
+  govuk_link_to(t("pages.parental-responsibility.title"), parental_responsibility_path),
+  govuk_link_to(t("pages.emotional-support.title"), emotional_support_path)]
 %>

@@ -100,7 +100,7 @@
       approval.</p>
 
     <p class="govuk-body">
-      <%= govuk_button_to 'Find a lawyer', 'https://solicitors.lawsociety.org.uk/' %>
+      <%= govuk_button_to "Find a lawyer", "https://solicitors.lawsociety.org.uk/" %>
     </p>
   </div>
 
@@ -110,14 +110,14 @@
     <p class="govuk-body-xs">Fees may vary depending on your location and the experience of the lawyer. How long you
       need will depend on
       your situation. Some lawyers offer free 30-minute consultations or you can
-      <%= govuk_link_to 'check if you can get free legal help', 'https://www.lawworks.org.uk/legal-advice-individuals' %>.
+      <%= govuk_link_to "check if you can get free legal help", "https://www.lawworks.org.uk/legal-advice-individuals" %>.
     </p>
   </div>
 </section>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('pages.professional-mediation.title'), professional_mediation_path),
-  govuk_link_to(t('pages.negotiating-between-parents.title'), negotiating_between_parents_path),
-  govuk_link_to(t('pages.collaborative-law.title'), collaborative_law_path),
-  govuk_link_to(t('pages.going-to-court.title'), going_to_court_path)]
+  govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.collaborative-law.title"), collaborative_law_path),
+  govuk_link_to(t("pages.going-to-court.title"), going_to_court_path)]
 %>

@@ -1,6 +1,6 @@
 <section class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl"><%= t('.title') %></h1>
+    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
     <p class="govuk-body-lead">Collaborative lawyers work with you and the other parent to resolve your issues out of
       court. You each hire a lawyer then all meet to negotiate face-to-face.</p>
@@ -105,7 +105,7 @@
               expensive so ask for a quote or see if they offer a fixed fee. Some lawyers give free 30-minute
               consultations.</p>
           </div>
-          <%= govuk_button_to 'Find a collaborative lawyer', 'https://resolution.org.uk/find-a-law-professional/' %>
+          <%= govuk_button_to "Find a collaborative lawyer", "https://resolution.org.uk/find-a-law-professional/" %>
         </div>
         <div class="cost govuk-grid-column-one-third">
           <h4 class="cost__heading govuk-heading-s">Lawyer rates (per hour)</h4>
@@ -214,9 +214,9 @@
         <div class="govuk-grid-column-two-thirds">
           <h2 class="area_links__heading govuk-heading-l">Collaborative law resources</h2>
           <p class="govuk-body">Read more about
-            the <%= govuk_link_to 'collaborative law process', 'https://resolution.org.uk/looking-for-help/splitting-up/your-process-options-for-divorce-and-dissolution/the-collaborative-process/' %></p>
+            the <%= govuk_link_to "collaborative law process", "https://resolution.org.uk/looking-for-help/splitting-up/your-process-options-for-divorce-and-dissolution/the-collaborative-process/" %></p>
           <p class="govuk-body">
-            <%= govuk_link_to 'Find a collaborative lawyer', 'https://resolution.org.uk/find-a-law-professional/' %></p>
+            <%= govuk_link_to "Find a collaborative lawyer", "https://resolution.org.uk/find-a-law-professional/" %></p>
         </div>
       </div>
     </div>
@@ -224,8 +224,8 @@
 </section>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('pages.professional-mediation.title'), professional_mediation_path),
-  govuk_link_to(t('pages.negotiating-between-parents.title'), negotiating_between_parents_path),
-  govuk_link_to(t('pages.lawyer-negotiation.title'), lawyer_negotiation_path),
-  govuk_link_to(t('pages.going-to-court.title'), going_to_court_path) ]
+  govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.lawyer-negotiation.title"), lawyer_negotiation_path),
+  govuk_link_to(t("pages.going-to-court.title"), going_to_court_path) ]
 %>

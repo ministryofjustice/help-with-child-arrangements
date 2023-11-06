@@ -7,11 +7,11 @@
     <p class="govuk-body">Mediation isn't relationship counselling and you don't have to be in the same room as the
       other parent.</p>
 
-    <%= govuk_inset_text(html_attributes: { lang: "en-GB", data: { demo: true }, aria: { role: 'note' } }) do %>
+    <%= govuk_inset_text(html_attributes: { lang: "en-GB", data: { demo: true }, aria: { role: "note" } }) do %>
       <p class="govuk-body"><strong>You could get up to &pound;500 towards family mediation</strong></p>
       <p class="govuk-body">This is a new scheme available for a short time only.<br>
         Find out more about the
-        <%= govuk_link_to 'family mediation voucher scheme', 'https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&utm_campaign=mediation_vouchers' %>
+        <%= govuk_link_to "family mediation voucher scheme", "https://www.gov.uk/guidance/family-mediation-voucher-scheme?utm_source=CAIT&utm_campaign=mediation_vouchers" %>
         .</p>
     <% end %>
 
@@ -224,7 +224,7 @@
           <p class="govuk-body-xs">Estimated cost based on an average of 3 sessions. Fees may vary depending on your
             location and the experience of the mediator. Some mediators offer reductions if you're unemployed or on a
             low income.
-            <%= govuk_link_to 'Legal aid may be available for mediation', 'https://www.nfm.org.uk/about-family-mediation-services/legal-aid-for-mediation/' %>
+            <%= govuk_link_to "Legal aid may be available for mediation", "https://www.nfm.org.uk/about-family-mediation-services/legal-aid-for-mediation/" %>
             .</p>
         </div>
       </div>
@@ -333,8 +333,8 @@
 <%= render "shared/mediation_resources" %>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('pages.negotiating-between-parents.title'), negotiating_between_parents_path),
-  govuk_link_to(t('pages.lawyer-negotiation.title'), lawyer_negotiation_path),
-  govuk_link_to(t('pages.collaborative-law.title'), collaborative_law_path),
-  govuk_link_to(t('pages.going-to-court.title'), going_to_court_path)]
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.lawyer-negotiation.title"), lawyer_negotiation_path),
+  govuk_link_to(t("pages.collaborative-law.title"), collaborative_law_path),
+  govuk_link_to(t("pages.going-to-court.title"), going_to_court_path)]
 %>
