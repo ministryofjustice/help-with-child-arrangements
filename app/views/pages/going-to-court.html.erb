@@ -153,23 +153,22 @@
             <h3 class="govuk-heading-s">Hire a lawyer</h3>
             <p class="govuk-body">A lawyer can be expensive but they'll handle the legal aspects of the case and represent you in court.</p>
             <p class="govuk-body">They may try and negotiate a deal out of court with the other parent or recommend you move to step 2 straight away.</p>
-            <p class="govuk-body">Your lawyer and the other parent's lawyer will then contact each other so they can
-              plan for your first collaborative meeting.</p>
             <p class="govuk-body"><%= govuk_link_to "Find a legal adviser", "https://solicitors.lawsociety.org.uk/" %></p>
             <h3 class="govuk-heading-s">Represent yourself</h3>
             <p class="govuk-body">You may choose to represent yourself because you'd prefer to speak to the judge directly or because you can't afford the legal fees.</p>
             <p class="govuk-body">If you can't afford legal representation, you can still ask a lawyer for advice at any time during the court process.</p>
-            <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to 'how to represent yourself in court.', 'https://www.gov.uk/represent-yourself-in-court' %>
+            <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to "how to represent yourself in court", "https://www.gov.uk/represent-yourself-in-court" %>.
 
-            <p class="govuk-body"><%= govuk_link_to 'Support Through Court', 'https://www.supportthroughcourt.org/' %> provides help for every stage of the court process for those without a lawyer.
-            <p class="govuk-body"><%= govuk_link_to 'Find a free legal advice clinic', 'https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you' %>
+            <p class="govuk-body"><%= govuk_link_to "Support Through Court", "https://www.supportthroughcourt.org/" %> provides help for every stage of the court process for those without a lawyer.
+            <p class="govuk-body"><%= govuk_link_to "Find a free legal advice clinic", "https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you" %>
           </div>
         </div>
         <div class="cost govuk-grid-column-one-third">
           <h4 class="cost__heading govuk-heading-s">Lawyer rates (per hour)</h4>
           <p class="cost__amount govuk-heading-l"><strong>&pound;110 - &pound;410</strong></p>
           <p class="govuk-body-xs">Fees may vary depending on your location and the experience of the lawyer. How long
-            you need will depend on your situation.</p>
+            you need will depend on your situation. Some lawyers offer free 30-minute consultations or fixed fees.
+            You can also <%= govuk_link_to "check if you can get free legal help", "https://weareadvocate.org.uk/apply-for-help.html" %>.</p>
         </div>
       </div>
     </div>
@@ -190,9 +189,9 @@
           </h2>
 
           <div class="step__content  govuk-govspeak gv-s-prose">
-            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to 'MIAM', professional_mediation_path %>, unless <%= govuk_link_to "you're exempt","https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
+            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to "MIAM", professional_mediation_path %>, unless <%= govuk_link_to "you're exempt", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
             <p class="govuk-body">The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p>
-            <p class="govuk-body">You will need to <%= govuk_link_to 'find a mediator', 'https://www.familymediationcouncil.org.uk/find-local-mediator/' %> to book a MIAM.</p>
+            <p class="govuk-body">You will need to <%= govuk_link_to "find a mediator", "https://www.familymediationcouncil.org.uk/find-local-mediator/" %> to book a MIAM.</p>
             <p class="govuk-body">Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>
           </div>
         </div>
@@ -304,8 +303,8 @@
 </section>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('page_title.mediation'), professional_mediation_path),
-  govuk_link_to(t('page_title.negotiation'), negotiating_between_parents_path),
-  govuk_link_to(t('page_title.lawyer_negotiation'), lawyer_negotiation_path),
-  govuk_link_to(t('page_title.collaborative'), collaborative_law_path)]
+  govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.lawyer-negotiation.title"), lawyer_negotiation_path),
+  govuk_link_to(t("pages.collaborative-law.title"), collaborative_law_path)]
 %>

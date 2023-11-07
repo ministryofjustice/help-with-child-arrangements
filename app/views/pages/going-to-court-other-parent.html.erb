@@ -8,11 +8,11 @@
       <h2 class="area_links__heading govuk-heading-l">Before they've applied</h2>
       <p class="govuk-body">
         Before the other parent can apply for a court order about your child arrangements, they must show they've attended a meeting about mediation, <%= govuk_link_to "except in certain cases", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.
-        This is called a MIAM or Mediation Information and Assessment Meeting. The mediator will <%= govuk_link_to "invite you to a meeting too", "/professional-mediation-other-parent" %>.
+        This is called a MIAM or Mediation Information and Assessment Meeting. The mediator will <%= govuk_link_to "invite you to a meeting too", professional_mediation_other_parent_path %>.
       </p>
       <p class="govuk-body">
         There's usually a better outcome for children and parents if you can reach an agreement without going to court.
-        So if there are no safety concerns, you should talk to the other parent about different options such as <%= govuk_link_to "negotiation", "/negotiating-between-parents" %> or <%= govuk_link_to "professional mediation", "/professional-mediation" %>.
+        So if there are no safety concerns, you should talk to the other parent about different options such as <%= govuk_link_to "negotiation", negotiating_between_parents_path %> or <%= govuk_link_to "professional mediation", professional_mediation_path %>.
       </p>
     </section>
 
@@ -34,7 +34,7 @@
       <p class="govuk-body">You'll have to <%= govuk_link_to "attend court", "https://www.gov.uk/represent-yourself-in-court" %> for any hearings. You can ask to appear in a different room in court from your ex-partner.</p>
       <p class="govuk-body">At the first hearing the judge will see if there's still a chance you can reach an agreement with the other parent.</p>
       <p class="govuk-body">They may ask you to try again to reach an agreement, for example by going to a meeting with a mediator.</p>
-      <p class="govuk-body">You may have to go on a course called a <%= govuk_link_to "'Separated Parents Information Programme'", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/separated-parents-information-programme/" %>.</p>
+      <p class="govuk-body">You may have to go on a course called a <%= govuk_link_to "‘Separated Parents Information Programme’", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/separated-parents-information-programme/" %>.</p>
       <p class="govuk-body">The court can ask Cafcass to provide a report on your case to help decide what's best for the child. The Cafcass officer may ask your child about their feelings. You'll get a copy of the report when it's written.</p>
       <p class="govuk-body">If you cannot agree, there may be further court hearings that you need to attend and you may need to give evidence.</p>
       <p class="govuk-body">The judge or magistrate will always put the welfare of children first when making the decision about child arrangements. They will think about the:</p>
@@ -95,9 +95,9 @@
 </section>
 
 <%= render "shared/agreement_links", links: [
-  govuk_link_to(t('page_title.mediation'), professional_mediation_path),
-  govuk_link_to(t('page_title.negotiation'), negotiating_between_parents_path),
-  govuk_link_to(t('page_title.lawyer_negotiation'), lawyer_negotiation_path),
-  govuk_link_to(t('page_title.collaborative'), collaborative_law_path),
-  govuk_link_to(t('page_title.court'), going_to_court_path) ]
+  govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
+  govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
+  govuk_link_to(t("pages.lawyer-negotiation.title"), lawyer_negotiation_path),
+  govuk_link_to(t("pages.collaborative-law.title"), collaborative_law_path),
+  govuk_link_to(t("pages.going-to-court.title"), going_to_court_path) ]
 %>
