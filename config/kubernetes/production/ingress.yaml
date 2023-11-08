@@ -4,15 +4,15 @@ metadata:
   name: help-with-child-arrangements-ingress
   namespace: help-with-child-arrangements-production
   annotations:
-    external-dns.alpha.kubernetes.io/set-identifier: help-with-child-arrangements-ingress-help_with_child_arrangements-production-green
+    external-dns.alpha.kubernetes.io/set-identifier: help-with-child-arrangements-ingress-help-with-child-arrangements-production-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
   tls:
   - hosts:
     - help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
-  - hosts:
-    - helpwithchildarrangements.service.justice.gov.uk
-    secretName: help-with-child-arrangements-cert
+  # - hosts:
+  #   - helpwithchildarrangements.service.justice.gov.uk
+  #   secretName: help-with-child-arrangements-cert
   rules:
   - host: help-with-child-arrangements.apps.live.cloud-platform.service.justice.gov.uk
     http:
@@ -24,13 +24,13 @@ spec:
             name: help-with-child-arrangements-service
             port:
               number: 3000
-  - host: helpwithchildarrangements.service.justice.gov.uk
-    http:
-      paths:
-      - path: /
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: help-with-child-arrangements-service
-            port:
-              number: 3000
+  # - host: helpwithchildarrangements.service.justice.gov.uk
+  #   http:
+  #     paths:
+  #     - path: /
+  #       pathType: ImplementationSpecific
+  #       backend:
+  #         service:
+  #           name: help-with-child-arrangements-service
+  #           port:
+  #             number: 3000
