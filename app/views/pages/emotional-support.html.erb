@@ -27,6 +27,7 @@
           <li><%= govuk_link_to "Gingerbread", "https://www.gingerbread.org.uk/" %></li>
         </ul>
       </section>
+
       <section id="emotional-support-offline" class="SectionArea">
         <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Find a group near you</h3>
         <p class="govuk-body">Look for a
@@ -79,27 +80,19 @@
   <section id="emotional-support-spip" class="SectionArea">
     <div class="govuk-grid-column-two-thirds govuk-!-margin-top-3">
       <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Parenting advice</h3>
-      <p class="govuk-body">The
-        <%= govuk_link_to "Separated Parents Information Programme (SPIP)", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/separated-parents-information-programme/" %>
-        helps you understand how to put your children first and manage disputes with the other parent.</p>
-
-      <p class="govuk-body">A judge may direct you to attend a SPIP if you take your case to court. You won't go to the
-        same meeting as the other parent.</p>
-      <p class="govuk-body">There are similar programmes in
-        <%= govuk_link_to "Wales", "https://gov.wales/cafcass-cymru/family-separation" %> and
-        <%= govuk_link_to "Scotland", "https://www.relationships-scotland.org.uk/family-support/parenting-apart-groups" %>
-        .
+      <p class="govuk-body">
+        The <%= govuk_link_to "Planning Together for Children", "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/help-planning-together-children" %> course in England and the
+        <%= govuk_link_to "Working Together for Children", "https://www.gov.wales/sites/default/files/publications/2023-01/working-together-for-children-wt4c-factsheet.pdf" %> programme in Wales
+        helps you understand how to put your children first and reduce the harmful effects of parental conflict.
       </p>
 
       <p class="govuk-body">
-        <%= govuk_button_to "Search for a SPIP", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/resources-parents-carers/" %>
+        A judge may direct you to complete Planning Together for Children or Working Together for Children if you take your case to court.
+        A Cafcass family court adviser can also make a request for you to attend.
+        You won't go to the same group as the other parent.
+        There is no cost to you for taking part.
       </p>
-    </div>
-
-    <div class="cost govuk-grid-column-one-third govuk-!-margin-top-4">
-      <h4 class="cost__heading govuk-heading-s">Cost of SPIP per person</h4>
-      <p class="cost__amount govuk-heading-l"><strong>&pound;150</strong></p>
-      <p class="govuk-body-s">It may be free to attend in some areas.</p>
+      <p class="govuk-body">There is a  similar programme in <%= govuk_link_to "Scotland", "http://relationships-scotland.org.uk/" %>.</p>
     </div>
   </section>
 </div>
@@ -108,7 +101,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <section id="emotional-support-readiness" class="SectionArea">
+    <section id="emotional-support-readiness" class="SectionArea govuk-!-margin-top-5 govuk-!-margin-bottom-5">
       <h2 class="govuk-heading-l">Emotional readiness</h2>
       <p class="govuk-body">Emotional readiness is being able to put aside your own feelings and any negative thoughts
         about the other parent. If you're emotionally ready you'll have a better chance of making an agreement that's in
