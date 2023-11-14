@@ -188,15 +188,15 @@
           </h2>
 
           <div class="step__content  govuk-govspeak gv-s-prose">
-            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to "MIAM", professional_mediation_path %>, unless <%= govuk_link_to "you're exempt", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
+            <p class="govuk-body">Before applying for a court order you must attend a <%= govuk_link_to "MIAM", "https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/" %>, unless <%= govuk_link_to "you're exempt", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions" %>.</p>
             <p class="govuk-body">The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p>
             <p class="govuk-body">You will need to <%= govuk_link_to "find a mediator", "https://www.familymediationcouncil.org.uk/find-local-mediator/" %> to book a MIAM.</p>
-            <p class="govuk-body">Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>
+            <p class="govuk-body">Only mediators authorised by the Family Mediation Council can carry out a MIAM. Check with the mediator before you book.</p>
           </div>
         </div>
         <div class="cost govuk-grid-column-one-third">
           <h4 class="cost__heading govuk-heading-s">Average cost of MIAM per person</h4>
-          <p class="cost__amount govuk-heading-l"><strong>&pound;90</strong></p>
+          <p class="cost__amount govuk-heading-l"><strong>&pound;120</strong></p>
           <p class="govuk-body-xs">Estimated fees may vary depending on your location and the experience of the
             mediator. Some mediators offer reductions if you're unemployed or on a low income. It may also be cheaper
             if you attend together. If you or the other parent are eligible for legal aid you both will qualify for a
@@ -222,7 +222,12 @@
 
           <div class="step__content">
             <p class="govuk-body">Use the <%= govuk_link_to "online service", "https://apply-to-court-about-child-arrangements.service.justice.gov.uk/" %> to apply to court about child arrangements. It costs £232 to apply.</p>
-            <p class="govuk-body">Alternatively fill in the C100 form to <%= govuk_link_to "make an application", "https://www.gov.uk/looking-after-children-divorce/apply-for-court-order" %> and send it to the family court closest to where your child lives. You can check this on <%= govuk_link_to "find a court or tribunal", "https://www.gov.uk/find-court-tribunal" %>.</p>
+            <p class="govuk-body">
+              Alternatively fill in the C100 form to <%= govuk_link_to "make an application", "https://www.gov.uk/looking-after-children-divorce/apply-for-court-order" %>
+              and send it to the family court closest to where your child lives.
+              You can check this on <%= govuk_link_to "find a court or tribunal", "https://www.gov.uk/find-court-tribunal" %>.
+              You will need to provide evidence that you have attended a MIAM, or why you are exempt.
+            </p>
             <%= govuk_inset_text do %>
             <p class="govuk-body">You must give brief details of why you are making the application.</p>
             <% end %>
@@ -272,7 +277,13 @@
             <p class="govuk-body">The judge will end the process and write a consent order setting out the details of your agreement.</p>
             <h3 class="govuk-heading-s">If you can't reach an agreement</h3>
             <p class="govuk-body">If the court makes an order it will be based on what is best for your child.</p>
-            <p class="govuk-body">Your case may be put on hold (adjourned) if the judge needs more information or time to decide what's best for your children. The judge may ask Cafcass to write another report.</p>
+            <p class="govuk-body">
+              Your case may be put on hold (adjourned) if the judge needs more information or time to decide what's best for your children.
+              The judge may ask Cafcass to write another report.
+            </p>
+            <p class="govuk-body">
+              The judge may ask you to try again to reach an agreement, for example, they may direct you to attend a MIAM or attempt mediation.
+            </p>
             <p class="govuk-body">A new date is set for the next hearing. If you reach an agreement before this date you'll need to go back to court for a judge to make a consent order.</p>
             <p class="govuk-body">GOV.UK has more information on <%= govuk_link_to "what happens if there's no agreement at the first hearing", "https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order" %>.</p>
           </div>
