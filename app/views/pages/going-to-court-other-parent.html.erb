@@ -27,6 +27,7 @@
         <li>a social services and criminal record check on you and the other parent</li>
         <li>any concerns you and the other parent may have about the safety and welfare of your children</li>
       </ul>
+      <p class="govuk-body">The Cafcass website has a short video to introduce their role in private law proceedings. <%=  govuk_link_to "My family is involved in private law proceedings | Cafcass", "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings" %>
     <section>
 
      <section id="going-to-court-other-parent-going-to-court" class="SectionArea">
@@ -34,7 +35,7 @@
       <p class="govuk-body">You'll have to <%= govuk_link_to "attend court", "https://www.gov.uk/guidance/what-to-expect-coming-to-a-court-or-tribunal" %> for any hearings. You can ask to appear in a different room in court from your ex-partner.</p>
       <p class="govuk-body">At the first hearing the judge will see if there's still a chance you can reach an agreement with the other parent.</p>
       <p class="govuk-body">They may ask you to try again to reach an agreement, for example by going to a meeting with a mediator.</p>
-      <p class="govuk-body">You may have to go on a course called a <%= govuk_link_to "‘Separated Parents Information Programme’", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/separated-parents-information-programme/" %>.</p>
+      <p class="govuk-body">You may have to go on a course called Planning Together for Children in England : <%= govuk_link_to "Help in Planning Together for Children | Cafcass", "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/help-planning-together-children" %>, or Working Together for Children in Wales <%= govuk_link_to "Working Together for Children (WT4C) (gov.wales)", "https://www.gov.wales/sites/default/files/publications/2023-01/working-together-for-children-wt4c-factsheet.pdf" %></p>
       <p class="govuk-body">The court can ask Cafcass to provide a report on your case to help decide what's best for the child. The Cafcass officer may ask your child about their feelings. You'll get a copy of the report when it's written.</p>
       <p class="govuk-body">If you cannot agree, there may be further court hearings that you need to attend and you may need to give evidence.</p>
       <p class="govuk-body">The judge or magistrate will always put the welfare of children first when making the decision about child arrangements. They will think about the:</p>
@@ -52,30 +53,9 @@
       <p class="govuk-body"><%= govuk_link_to "Read about changing or enforcing an order", "https://www.gov.uk/looking-after-children-divorce/change-or-enforce-an-order" %></p>
     </section>
   </div>
-</section>
+</div>
 
-<section id="going-to-court-other-parent-video" class="section_video govuk-grid-row" data-block-name="going-to-court-other-parent-video">
-  <div class="govuk-grid-column-full">
-    <div class="section_video__wrapper">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
-          <h2 class="govuk-heading-l">After Cafcass contacts you</h2>
-          <p class="govuk-visually-hidden">
-            <%= govuk_link_to "After Cafcass contacts you - Video on YouTube", "https://www.youtube.com/watch?v=Fnscn3Yt3RU" %>
-          </p>
-
-          <div aria-hidden="true" type="video" id="c_video_player">
-            <div class="section_video__video_wrapper">
-              <iframe title="After Cafcass contacts you" src="https://www.youtube.com/embed/Fnscn3Yt3RU?enablejsapi=1&origin=https://helpwithchildarrangements.service.justice.gov.uk" allowfullscreen="" data-gtm-yt-inspected-8="true"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="govuk-grid-row">
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
     <div class="area_links">
       <div class="govuk-grid-row">
@@ -92,7 +72,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <%= render "shared/agreement_links", links: [
   govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
