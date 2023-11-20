@@ -62,27 +62,27 @@ jobs:
         uses: slackapi/slack-github-action@v1.24.0
         with:
           payload: |
-            {
-              "color":  "#1d990c",
-              "text": "${{ github.actor }} deployed ${{ github.sha }} to *TEST*",
-              "fields":
-              [
-                {
-                  "title": "Project",
-                  "value": "Help With Child Arrangements",
-                  "short": true
-                }
-              ],
-              "actions":
-              [
-                {
-                  "name": "job",
-                  "text": "Visit Job",
-                  "type": "button",
-                  "value": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                }
-              ]
-            }
+            attachments: [
+              {
+                "color": "#1d990c",
+                "text": "${{ github.actor }} deployed ${{ github.sha }} to *TEST*",
+                "fields": [
+                  {
+                    "title": "Project",
+                    "value": "Help With Child Arrangements",
+                    "short": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "name": "job",
+                    "text": "Visit Job",
+                    "type": "button",
+                    "value": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                  }
+                ]
+              }
+            ]
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
