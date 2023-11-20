@@ -103,7 +103,6 @@ jobs:
         with:
           payload: |
             {
-              "username": "GitHub",
               "attachments": [
                 {
                   "color": "#1d990c",
