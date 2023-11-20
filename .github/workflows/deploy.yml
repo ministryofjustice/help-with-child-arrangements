@@ -97,7 +97,7 @@ jobs:
         run: |
           kubectl -n ${KUBE_NAMESPACE} apply -f config/kubernetes/staging
 
-      - name: Send custom JSON data to Slack workflow
+      - name: Send deploy notification to product Slack channel
         id: slack
         uses: slackapi/slack-github-action@v1.24.0
         with:
@@ -164,7 +164,7 @@ jobs:
         run: |
           kubectl -n ${KUBE_NAMESPACE} apply -f config/kubernetes/production
 
-      - name: Send custom JSON data to Slack workflow
+      - name: Send deploy notification to product Slack channel
         id: slack
         uses: slackapi/slack-github-action@v1.24.0
         with:
@@ -193,4 +193,35 @@ jobs:
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+
+      - name: Send deploy notification to release Slack channel
+        id: slack
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: |
+            {
+              "attachments": [
+                {
+                  "color": "#1d990c",
+                  "text": "${{ github.actor }} deployed *${{ needs.build.outputs.build-tag }}* to *Production*",
+                  "fields": [
+                    {
+                      "title": "Project",
+                      "value": "Help With Child Arrangements",
+                      "short": true
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "text": "Visit Job",
+                      "type": "button",
+                      "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                    }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.PROD_SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
