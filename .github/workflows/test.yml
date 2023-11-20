@@ -65,6 +65,9 @@ jobs:
             {
               "attachments": [
                 {
+                  "username": "GitHub Actions",
+                  "icon_url": "https://github.com/favicon.ico",
+                  "footer": "https://helpwithchildarrangements.service.justice.gov.uk/",
                   "color": "#1d990c",
                   "text": "${{ github.actor }} deployed ${{ github.sha }} to *TEST*",
                   "fields": [
@@ -76,10 +79,9 @@ jobs:
                   ],
                   "actions": [
                     {
-                      "name": "job",
                       "text": "Visit Job",
                       "type": "button",
-                      "value": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                      "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
                     }
                   ]
                 }
