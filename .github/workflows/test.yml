@@ -63,10 +63,10 @@ jobs:
         with:
           payload: |
             {
+              "username": "GitHub Actions",
+              "icon_url": "https://github.com/favicon.ico",
               "attachments": [
                 {
-                  "username": "GitHub Actions",
-                  "icon_url": "https://github.com/favicon.ico",
                   "footer": "https://helpwithchildarrangements.service.justice.gov.uk/",
                   "color": "#1d990c",
                   "text": "${{ github.actor }} deployed ${{ github.sha }} to *TEST*",
