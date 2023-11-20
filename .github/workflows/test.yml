@@ -57,39 +57,6 @@ jobs:
       - name: Run tests
         run: bundle exec rspec
 
-      - name: Send custom JSON data to Slack workflow
-        id: slack
-        uses: slackapi/slack-github-action@v1.24.0
-        with:
-          payload: |
-            {
-              "username": "GitHub Actions",
-              "icon_url": "https://github.com/favicon.ico",
-              "attachments": [
-                {
-                  "color": "#1d990c",
-                  "text": "${{ github.actor }} deployed ${{ github.sha }} to *TEST*",
-                  "fields": [
-                    {
-                      "title": "Project",
-                      "value": "Help With Child Arrangements",
-                      "short": true
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "text": "Visit Job",
-                      "type": "button",
-                      "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
-                    }
-                  ]
-                }
-              ]
-            }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-
   call-build-and-deploy:
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: test
