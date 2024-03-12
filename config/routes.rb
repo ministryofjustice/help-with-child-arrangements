@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/about/privacy", to: "about#privacy"
   get "/about/terms-conditions", to: "about#terms-conditions"
 
+  get "/arbitration", to: "pages#arbitration"
   get "/collaborative-law", to: "pages#collaborative-law"
   get "/emotional-support", to: "pages#emotional-support"
   get "/going-to-court", to: "pages#going-to-court"
