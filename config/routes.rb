@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get "/parental-responsibility", to: "pages#parental-responsibility"
   get "/professional-mediation", to: "pages#professional-mediation"
   get "/professional-mediation-other-parent", to: "pages#professional-mediation-other-parent"
-  get "/single-lawyer-model", to: "pages#single-lawyer-model"
+  get "/single-lawyer", to: "pages#single-lawyer"
 
   get "/404", to: "errors#not_found"
   get "/500", to: "errors#internal_error"
