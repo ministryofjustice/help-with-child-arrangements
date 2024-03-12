@@ -444,7 +444,7 @@
       <article class="summary_area summary_area__Template-" id="card-single_lawyer" data-slug="" data-block-name="route:single_lawyer">
         <div class="summary_area__details">
           <h3 class="summary_area__heading govuk-heading-m">
-            <%= govuk_link_to "Single Lawyer Model", single_lawyer_path %>
+            <%= govuk_link_to "Single lawyer model", single_lawyer_path %>
           </h3>
           <p class="summary_area__lede govuk-body">One lawyer will work with you and the other parent to
             manage your separation together without going to court.
@@ -514,6 +514,79 @@
         </aside>
         <p class="summary_area__read-more">
           <%= govuk_link_to "Read more about single lawyer model", single_lawyer_path %>
+        </p>
+      </article>
+
+      <article class="summary_area summary_area__Template-" id="card-arbitration" data-slug="" data-block-name="route:arbitration">
+        <div class="summary_area__details">
+          <h3 class="summary_area__heading govuk-heading-m">
+            <%= govuk_link_to "Arbitration", arbitration_path %>
+          </h3>
+          <p class="summary_area__lede govuk-body">In family arbitration, you and the other person choose a qualified,
+            impartial professional to hear both of your views.
+            They will then make a decision that you have agreed to be bound by to resolve your dispute.</p>
+          <div class="summary_area__usp">
+            <h4 class="summary_area_usp__heading  govuk-heading-s">
+              <span aria-hidden="true">
+                <span data-block-name="Area__usp__heading">Choose this if...</span>
+              </span>
+              <span class="govuk-visually-hidden">
+                <span data-block-name="Area__usp__heading--a11y">Choose Arbitration if...</span>
+              </span>
+            </h4>
+            <p>You want an independent professional to make a decision for you without going to court.</p>
+          </div>
+
+          <div class="summary_area__involvement">
+            <h4 class="summary_area__involvement__heading  govuk-heading-s">
+              <span data-block-name="summary_area__involvement__heading">Who's involved</span>
+              <span class="govuk-visually-hidden">in Arbitration</span></h4>
+            <ul class="summary_area__involvement__list  govuk-list govuk-list--bullet">
+              <li>Both parents/carers</li>
+              <li>Arbitrator</li>
+              <li>Lawyers (if applicable)</li>
+              <li>Experts (if applicable)</li>
+            </ul>
+          </div>
+        </div>
+        <aside class="summary_area__aside">
+          <div class="pros_cons">
+            <div class="Pros">
+              <h4 class="pros_cons__heading pros_cons__heading--pros  govuk-heading-s" aria-label="Pros of Arbitration">
+                <span data-block-name="pros_cons__heading--pros">Pros</span>
+              </h4>
+              <ul class="pros_cons__list govuk-list pros_cons__list--pros">
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--pros">
+                  quicker and more flexible than court
+                </li>
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--pros">
+                  you choose the arbitrator
+                </li>
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--pros">
+                  the arbitrator will make a decision based on the evidence
+                </li>
+              </ul>
+            </div>
+            <div class="Cons">
+              <h4 class="pros_cons__heading pros_cons__heading--cons  govuk-heading-s" aria-label="Cons of Arbitration">
+                <span data-block-name="pros_cons__heading--cons">Cons</span>
+              </h4>
+              <ul class="pros_cons__list govuk-list pros_cons__list--cons">
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--cons">
+                 process can break down if there is a lack of trust and co-operation
+                </li>
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--cons">
+                  can be an expensive process
+                </li>
+                <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--cons">
+                  not suitable for cases with domestic abuse or safeguarding concerns
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <p class="summary_area__read-more">
+          <%= govuk_link_to "Read more about arbitration", arbitration_path %>
         </p>
       </article>
 
