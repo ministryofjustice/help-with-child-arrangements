@@ -13,6 +13,8 @@ en:
       title: Terms and conditions
 
   pages:
+    arbitration:
+      title: Arbitration
     collaborative-law:
       title: Collaborative law
     emotional-support:
@@ -33,3 +35,5 @@ en:
       title: Professional mediation
     professional-mediation-other-parent:
       title: If the other parent wants you to go to mediation
+    single-lawyer:
+      title: Single lawyer model
