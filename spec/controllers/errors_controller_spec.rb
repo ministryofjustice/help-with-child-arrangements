@@ -12,4 +12,16 @@ RSpec.describe ErrorsController, type: :controller do
       expect(response).to be_not_found
     end
   end
+
+  context "when internal error" do
+    it "renders the expected template" do
+      get :internal_error
+      expect(response).to render_template(:internal_error)
+    end
+
+    it "is successful" do
+      get :internal_error
+      expect(response.status).to eq 500
+    end
+  end
 end

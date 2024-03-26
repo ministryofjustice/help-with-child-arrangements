@@ -20,6 +20,8 @@ gem "sprockets-rails", "~> 3.4"
 
 group :test do
   gem "rails-controller-testing"
+  gem "simplecov", require: false
+  gem "simplecov-json", require: false
 end
 
 group :development, :test do
