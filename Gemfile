@@ -8,8 +8,6 @@ gem "rails", "~> 7.1.2"
 gem "bootsnap", require: false
 gem "govuk_app_config"
 gem "govuk-components"
-gem "govuk_design_system_formbuilder"
-gem "jbuilder"
 gem "puma", "~> 6.4"
 gem "sentry-rails"
 gem "sentry-ruby"
