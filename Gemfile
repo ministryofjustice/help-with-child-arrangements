@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby File.read(".ruby-version").strip
 
-gem "rails", "~> 7.1.2"
+gem "rails", "~> 7.1.3"
 
 gem "bootsnap", require: false
 gem "govuk_app_config"
