@@ -61,6 +61,10 @@ jobs:
     needs: build
     environment: staging
 
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: read  # This is required for actions/checkout
+
     env:
       KUBE_NAMESPACE: ${{ secrets.KUBE_NAMESPACE }}
 
@@ -150,6 +154,10 @@ jobs:
     needs: deploy-staging
     if: ${{ github.ref == 'refs/heads/main' }}
     environment: production
+
+    permissions:
+      id-token: write # This is required for requesting the JWT
+      contents: read  # This is required for actions/checkout
 
     env:
       KUBE_NAMESPACE: ${{ secrets.KUBE_NAMESPACE }}
