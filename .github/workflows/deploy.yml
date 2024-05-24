@@ -6,6 +6,7 @@ on:
 
 env:
   PREFIX: "cait"
+  SHA: ${{ github.event.pull_request.head.sha || github.sha }}
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -40,7 +41,7 @@ jobs:
         id: vars
         run: |
           branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
-          short_sha=$(git rev-parse --short ${{ github.sha }})
+          short_sha=$(git rev-parse --short $SHA)
           build_tag=$PREFIX-$branch-$short_sha
           echo "build_tag=$build_tag" >> $GITHUB_OUTPUT
 
@@ -49,16 +50,11 @@ jobs:
           docker build \
             --build-arg APP_BUILD_DATE=${{ env.BUILD_DATE }} \
             --build-arg APP_BUILD_TAG=${{ steps.vars.outputs.build_tag }} \
-            --build-arg APP_GIT_COMMIT=${{ github.sha }} \
-            -t ${{ vars.ECR_URL }}:${{ github.sha }} .
+            --build-arg APP_GIT_COMMIT=$SHA \
+            -t ${{ vars.ECR_URL }}:$SHA .
 
       - name: Push to ECR
-        run: |
-          docker tag ${{ vars.ECR_URL }}:${{ github.sha }} ${{ vars.ECR_URL }}:staging.latest
-          docker tag ${{ vars.ECR_URL }}:${{ github.sha }} ${{ vars.ECR_URL }}:production.latest
-          docker push ${{ vars.ECR_URL }}:${{ github.sha }}
-          docker push ${{ vars.ECR_URL }}:staging.latest
-          docker push ${{ vars.ECR_URL }}:production.latest
+        run: docker push ${{ vars.ECR_URL }}:$SHA
 
   deploy-staging:
     runs-on: ubuntu-latest
@@ -72,20 +68,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Assume role in Cloud Platform
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.ECR_ROLE_TO_ASSUME }}
+          aws-region: ${{ vars.ECR_REGION }}
+
+      - name: Login to container repository
+        uses: aws-actions/amazon-ecr-login@v2
+        id: login-ecr
+
       - name: Store build tag
         id: vars
         run: |
           branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
-          short_sha=$(git rev-parse --short ${{ github.sha }})
+          short_sha=$(git rev-parse --short $SHA)
           build_tag=$PREFIX-$branch-$short_sha
           echo "build_tag=$build_tag" >> $GITHUB_OUTPUT
 
       - name: Update image tag
         env:
           ECR_URL: ${{ vars.ECR_URL }}
-          IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: $SHA
         run: |
           cat config/kubernetes/staging/deployment.tpl | envsubst > config/kubernetes/staging/deployment.yaml
+
+      - name: Tag build and push to ECR
+        run: |
+          docker pull ${{ vars.ECR_URL }}:$SHA
+          docker tag ${{ vars.ECR_URL }}:$SHA ${{ vars.ECR_URL }}:staging.latest
+          docker push ${{ vars.ECR_URL }}:staging.latest
 
       - name: Authenticate to the cluster
         env:
@@ -146,20 +158,36 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Assume role in Cloud Platform
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.ECR_ROLE_TO_ASSUME }}
+          aws-region: ${{ vars.ECR_REGION }}
+
+      - name: Login to container repository
+        uses: aws-actions/amazon-ecr-login@v2
+        id: login-ecr
+
       - name: Store build tag
         id: vars
         run: |
           branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
-          short_sha=$(git rev-parse --short ${{ github.sha }})
+          short_sha=$(git rev-parse --short $SHA)
           build_tag=$PREFIX-$branch-$short_sha
           echo "build_tag=$build_tag" >> $GITHUB_OUTPUT
 
       - name: Update image tag
         env:
           ECR_URL: ${{ vars.ECR_URL }}
-          IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: $SHA
         run: |
           cat config/kubernetes/production/deployment.tpl | envsubst > config/kubernetes/production/deployment.yaml
+
+      - name: Tag build and push to ECR
+        run: |
+          docker pull ${{ vars.ECR_URL }}:$SHA
+          docker tag ${{ vars.ECR_URL }}:$SHA ${{ vars.ECR_URL }}:production.latest
+          docker push ${{ vars.ECR_URL }}:production.latest
 
       - name: Authenticate to the cluster
         env:
