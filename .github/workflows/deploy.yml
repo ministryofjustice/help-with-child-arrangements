@@ -93,7 +93,7 @@ jobs:
       - name: Update image tag
         env:
           ECR_URL: ${{ vars.ECR_URL }}
-          IMAGE_TAG: $SHA
+          IMAGE_TAG: ${{ env.SHA }}
         run: |
           cat config/kubernetes/staging/deployment.tpl | envsubst > config/kubernetes/staging/deployment.yaml
 
@@ -187,7 +187,7 @@ jobs:
       - name: Update image tag
         env:
           ECR_URL: ${{ vars.ECR_URL }}
-          IMAGE_TAG: ${{ env.SHA }}
+          IMAGE_TAG: $SHA
         run: |
           cat config/kubernetes/production/deployment.tpl | envsubst > config/kubernetes/production/deployment.yaml
 
