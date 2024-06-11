@@ -120,7 +120,7 @@ jobs:
           kubectl -n ${KUBE_NAMESPACE} apply -f config/kubernetes/staging
 
       - name: Send deploy notification to product Slack channel
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
@@ -214,7 +214,7 @@ jobs:
           kubectl -n ${KUBE_NAMESPACE} apply -f config/kubernetes/production
 
       - name: Send deploy notification to product Slack channel
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
@@ -244,7 +244,7 @@ jobs:
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
 
       - name: Send deploy notification to release Slack channel
-        uses: slackapi/slack-github-action@v1.25.0
+        uses: slackapi/slack-github-action@v1.26.0
         with:
           payload: |
             {
