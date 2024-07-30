@@ -55,104 +55,23 @@ Follow the instructions printed out from the `rbenv init` command and update you
 
 #### Assets
 Yarn and node are required to build css and js assets
+
 ```
 $ brew install node
 $ brew install yarn
+$ yarn install
+```
+
+#### Setup
+Use the setup command to install gems
+
+```
+$ bin/setup
 ```
 
 #### Running locally
 Use the dev command to run the application
+
 ```
 $ bin/dev
-```
-
-If this dev command fails with the message "foreman: not found" install the foreman gem manually:
-```
-$ gem install foreman
-```
-Then append `export PATH="~/.gem/bin:$PATH"` to your `~/.bash_profile` or equivalent file accordingly, then start a new terminal and navigate to the repo directory.
-
-Equally, if the dev command fails with the message "terminated by SIGTERM" and the build output also states "/bin/sh: esbuild: command not found" run the commands:
-```
-$ yarn add esbuild
-```
-```
-$ yarn add sass
-```
-
-## Development with Docker
-
-##### Installing Docker & Dory
-
-This project uses Docker and the [Dory proxy](https://github.com/FreedomBen/dory) to keep your development environment
-ephemeral. Dory ensures your http://localhost/ is free for use by other applications.
-
-###### Macbook
-
-https://docs.docker.com/desktop/install/mac-install/
-
-###### Linux
-
-https://docs.docker.com/desktop/install/linux-install/
-
-##### Launch the site locally
-
-```bash
-dory up
-```
-
-```bash
-docker compose up
-```
-
-##### What happens next?
-
-1. Docker builds the required images
-2. Ruby, Rails and PostgresDB are installed in networked containers
-3. An init script runs
-4. Rails launches with a setup script
-5. The Database is created
-6. Migrations are loaded including any seed data
-7. CSS and JS watchers are launched (in the background)
-8. Puma server is started on port 3000
-9. The site becomes available at: http://help-with-child-arrangements.docker/
-
-Updates you make to source code will be available to view in your
-browser, [at the above URL](http://help-with-child-arrangements.docker/). Output and errors during development can be
-viewed in the terminal output.
-
-##### Finishing your development session
-
-```bash
-docker compose down
-```
-
-To start again, simply run:
-
-```bash
-docker compose up
-```
-
-### Access a running container
-
-From time to time it may be necessary to use commands like `rails c`. Because the application is running inside a
-container you will need to access this container to execute operations.
-
-```bash
-docker compose exec --workdir /app app sh
-```
-
-From the command prompt, run `rails c` and other commands to assist development.
-
-### Testing
-
-TODO **_: create a spec environment_**.
-
-This project provides an ephemeral, pre-production environment to develop locally. Rspec tests are configured and
-executed using the CI environment, via GitHub Actions.
-
-It is possible to run tests via `docker compose exec`. Please be sure to update the `RAILS_ENV` environment.
-
-```bash
-RAILS_ENV=test
 ```
