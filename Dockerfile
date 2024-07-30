@@ -6,7 +6,6 @@ WORKDIR /app
 # Install dependencies
 RUN apk add --no-cache \
     build-base \
-    postgresql14-dev \
     tzdata \
     yarn
 
