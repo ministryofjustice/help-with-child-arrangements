@@ -70,8 +70,11 @@ $ bin/setup
 ```
 
 #### Running locally
-Use the dev command to run the application
+Use the dev command to run the application. This will use Foreman to start the rails server as well as compiling the css and js. Any changes to the css and js will be live updated.
 
 ```
 $ bin/dev
 ```
+
+## Exceptions
+Any exceptions raised in any deployed environment will be sent to [Sentry](https://ministryofjustice.sentry.io/projects/help-with-child-arrangements).
