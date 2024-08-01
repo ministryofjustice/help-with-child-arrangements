@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby File.read(".ruby-version").strip
+ruby file: ".ruby-version"
 
 gem "rails", "~> 7.1.3"
 
-gem "bootsnap", require: false
 gem "govuk_app_config"
 gem "govuk-components"
 gem "puma", "~> 6.4"
