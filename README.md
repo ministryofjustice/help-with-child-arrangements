@@ -76,5 +76,11 @@ Use the dev command to run the application. This will use Foreman to start the r
 $ bin/dev
 ```
 
+#### Running tests
+
+```
+$ bundle exec rspec
+```
+
 ## Exceptions
 Any exceptions raised in any deployed environment will be sent to [Sentry](https://ministryofjustice.sentry.io/projects/help-with-child-arrangements).
