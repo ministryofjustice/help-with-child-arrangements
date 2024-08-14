@@ -9,7 +9,7 @@ RUN apk add --no-cache \
 # Ensure latest rubygems is installed
 RUN gem update --system
 
-FROM base as builer
+FROM base as builder
 
 # Install dependencies
 RUN apk add --no-cache \
