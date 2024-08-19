@@ -1,10 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: help-with-child-arrangements-ingress
+  name: help-with-child-arrangements-ingress-modsec
   namespace: help-with-child-arrangements-production
   annotations:
-    external-dns.alpha.kubernetes.io/set-identifier: help-with-child-arrangements-ingress-help-with-child-arrangements-production-green
+    external-dns.alpha.kubernetes.io/set-identifier: help-with-child-arrangements-ingress-modsec-help-with-child-arrangements-production-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
     nginx.ingress.kubernetes.io/enable-modsecurity: "true"
     nginx.ingress.kubernetes.io/modsecurity-snippet: |
