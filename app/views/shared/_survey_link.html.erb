@@ -1,18 +1,6 @@
-<div class="govuk-grid-row">
-  <div class="govuk-notification-banner" role="region" aria-labelledby="help_us_improve_our_website" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-      <h2 class="govuk-notification-banner__title" id="help_us_improve_our_website">
-        Important
-      </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-      <p class="govuk-notification-banner__heading">Help us improve our website</p>
-
-        <a class="govuk-notification-banner__link" href="https://forms.office.com/e/M4cfXCh4RF">Take 3 minutes to tell us if you found what you needed on our website.</a>
-
-        Your feedback will help us give millions of people the information they need.
-
-      </p>
-    </div>
-  </div>
-</div>
+<%= govuk_notification_banner(title_text: "Help us improve our website") do %>
+  <ul>
+    <li style="list-style-type: none;"><a href="https://forms.office.com/e/M4cfXCh4RF">Take 3 minutes to tell us if you found what you needed on our website.</a></li>
+    <li style="list-style-type: none;">Your feedback will help us give millions of people the information they need.</li>
+  </ul>
+<% end %>
