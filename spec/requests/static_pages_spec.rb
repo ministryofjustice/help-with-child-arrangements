@@ -71,7 +71,6 @@ RSpec.describe "Static pages" do
 
   it "shows the professional mediation other parent page" do
     get professional_mediation_other_parent_path
-    puts professional_mediation_other_parent_path
     expect(response).to be_successful
     expect(response.body).to include("You may have been contacted by a mediator or the other parent may have asked you to try mediation")
     expect(response.body).to include("Help us improve our website")
