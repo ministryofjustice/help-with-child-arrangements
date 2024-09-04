@@ -59,7 +59,7 @@
   <div class="govuk-grid-column-full">
     <div class="area_links">
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-column-two-thirds govuk-!-margin-bottom-8">
           <h2 class="area_links__heading govuk-heading-l">Going to court resources</h2>
           <p class="govuk-body">
             Telephone: 01689 820272 (Resolution)<br>
@@ -74,6 +74,7 @@
   </div>
 </div>
 
+<%= render "shared/survey_link" %>
 <%= render "shared/agreement_links", links: [
   govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
   govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),

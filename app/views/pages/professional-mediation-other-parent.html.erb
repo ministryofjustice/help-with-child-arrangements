@@ -91,7 +91,7 @@
     <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-          <section id="going-to-court-other-parent-before" class="SectionArea">
+          <section id="going-to-court-other-parent-before" class="SectionArea govuk-!-margin-bottom-8">
             <h2 class="area_links__heading govuk-heading-l">Professional mediation resources</h2>
             <p>The Family Mediation Council has more information on the <%= govuk_link_to "mediation process", "https://www.familymediationcouncil.org.uk/family-mediation/" %> and how it can benefit you.
               Find out more about <%= govuk_link_to "professional mediation", professional_mediation_path %>.</p>
@@ -111,6 +111,7 @@
   </div>
 </section>
 
+<%= render "shared/survey_link" %>
 <%= render "shared/agreement_links", links: [
   govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
   govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),

@@ -237,7 +237,7 @@
   </div>
 </section>
 
-<section id="step-arbitration-step-5" class="govuk-grid-row">
+<section id="step-arbitration-step-5" class="govuk-grid-row govuk-!-margin-bottom-8">
   <div class="govuk-grid-column-full">
     <div class="step">
       <div class="govuk-grid-row">
@@ -275,6 +275,7 @@
   </div>
 </section>
 
+<%= render "shared/survey_link" %>
 <%= render "shared/agreement_links", links: [
   govuk_link_to(t("pages.negotiating-between-parents.title"), negotiating_between_parents_path),
   govuk_link_to(t("pages.professional-mediation.title"), professional_mediation_path),
