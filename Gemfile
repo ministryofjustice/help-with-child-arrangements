@@ -7,7 +7,7 @@ gem "rails", "~> 7.2"
 
 gem "govuk_app_config"
 gem "govuk-components"
-gem "puma", "~> 6.4"
+gem "puma", "~> 6.6"
 gem "sentry-rails"
 gem "sentry-ruby"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
