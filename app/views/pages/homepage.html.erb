@@ -45,6 +45,10 @@
           <p class="summary_area__lede-additional govuk-body">Most children will feel more secure if
             they have regular contact with their parents and know where to get extra support if they need it. If they
             understand the situation you should involve them in the decision-making.</p>
+
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about putting your children first", involving_children_path %>
+          </p>
         </div>
 
         <aside class="summary_area__aside">
@@ -66,9 +70,6 @@
           </div>
         </aside>
 
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about putting your children first", involving_children_path %>
-        </p>
 
       </article>
 
@@ -82,7 +83,9 @@
             time with your children (if you don't live with them), but the other parent must include you when making
             important decisions about their lives.</p>
 
-
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about your parental responsibility", parental_responsibility_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="summary_area__concerning">
@@ -102,9 +105,6 @@
             </ul>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about your parental responsibility", parental_responsibility_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-emotional_support" data-slug="" data-block-name="route:emotional_support">
@@ -113,6 +113,9 @@
           <p class="govuk-body">Emotional support can help you get through the stress of making child arrangements.</p>
           <p class="govuk-body">You're more likely to reach an agreement if you're emotionally ready and know where to
             get support if you need it.</p>
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about getting emotional support", emotional_support_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="summary_area__concerning">
@@ -126,9 +129,6 @@
             </ul>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about getting emotional support", emotional_support_path %>
-        </p>
       </article>
     </section>
 
@@ -456,6 +456,9 @@
               <li>One lawyer for both parents</li>
             </ul>
           </div>
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about single lawyer model", single_lawyer_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -496,9 +499,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about single lawyer model", single_lawyer_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-arbitration" data-slug="" data-block-name="route:arbitration">
@@ -530,6 +530,9 @@
               <li>Experts (if applicable)</li>
             </ul>
           </div>
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about arbitration", arbitration_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -567,9 +570,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about arbitration", arbitration_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-going_to_court" data-slug="" data-block-name="route:going_to_court">
@@ -600,6 +600,9 @@
               <li>Judge</li>
             </ul>
           </div>
+          <p class="summary_area__read-more">
+            <%= govuk_link_to "Read more about going to court", going_to_court_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -639,9 +642,7 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about going to court", going_to_court_path %>
-        </p>
+
       </article>
     </section>
   </div>
