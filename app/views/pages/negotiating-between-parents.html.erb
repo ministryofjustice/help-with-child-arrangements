@@ -1,4 +1,4 @@
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-!-margin-bottom-8">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
@@ -6,14 +6,14 @@
       negotiate with the other parent. There are free tools and services that can help you.</p>
 
     <div class="summary_area__usp">
-      <h4 class="summary_area_usp__heading govuk-heading-s govuk-!-margin-bottom-1">
+      <h2 class="summary_area_usp__heading govuk-heading-l govuk-!-margin-bottom-1">
         <span aria-hidden="true">
           <span data-block-name="Area__usp__heading">Choose this if...</span>
         </span>
         <span class="govuk-visually-hidden">
           <span data-block-name="Area__usp__heading--a11y">Choose Negotiation tools and services if...</span>
         </span>
-      </h4>
+      </h2>
 
       <p>You both still communicate and agree on the majority of issues but may benefit from using a tool such as
         a parenting plan.</p>
@@ -21,10 +21,6 @@
   </div>
 
   <div class="govuk-grid-column-one-third">
-    <div class="share_link">
-      <%= govuk_link_to "Share this page by email", "mailto:?to=&body=If%20there%20are%20no%20safety%20concerns%2C%20the%20cheapest%20and%20easiest%20way%20to%20make%20arrangements%20is%20to%20negotiate%20with%20the%20other%20parent.%20There%20are%20free%20tools%20and%20services%20that%20can%20help%20you.%0D%0A%0D%0AFind%20out%20more%20about%20negotiation%20tools%20and%20services%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fnegotiating-between-parents%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20negotiation%20tools%20and%20services%20with%20you" %>
-    </div>
-
     <div class="pros_cons pros_cons--header">
       <div class="Pros">
         <h4 class="pros_cons__heading pros_cons__heading--pros govuk-heading-s" aria-label="Pros of Negotiation tools and services">
@@ -65,6 +61,9 @@
 
 <section class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
+    <div class="share_link govuk-!-margin-bottom-8">
+      <%= govuk_link_to "Share this page by email", "mailto:?to=&body=If%20there%20are%20no%20safety%20concerns%2C%20the%20cheapest%20and%20easiest%20way%20to%20make%20arrangements%20is%20to%20negotiate%20with%20the%20other%20parent.%20There%20are%20free%20tools%20and%20services%20that%20can%20help%20you.%0D%0A%0D%0AFind%20out%20more%20about%20negotiation%20tools%20and%20services%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Fnegotiating-between-parents%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20negotiation%20tools%20and%20services%20with%20you" %>
+    </div>
     <h2 class="govuk-heading-l">Which tools and services to use</h2>
     <p class="govuk-body">The needs of your children must come first when negotiating arrangements. The following are
       flexible, unless you make them into a
@@ -87,7 +86,7 @@
       <%= govuk_link_to "Cafcass website", "https://www.cafcass.gov.uk/grown-ups/parents-and-carers/divorce-and-separation/parenting-plan/" %>
       .</p>
 
-    <h2 class="govuk-heading-m">Negotiating tools</h2>
+    <h3 class="govuk-heading-m">Negotiating tools</h3>
     <p class="govuk-body">
       <%= govuk_link_to "The Negotiations Cycle tool", "https://www.separatedfamilies.info/home/parenting-apart/negotiations/" %>
       lets you break down your negotiations into 4 stages.</p>
@@ -95,7 +94,7 @@
       <%= govuk_link_to "arrangements fact sheet", "https://www.gingerbread.org.uk/information/contact-arrangements/making-arrangements-for-your-children/" %>
       that includes tips on making negotiating work.</p>
 
-    <h2 class="govuk-heading-m">Letter templates</h2>
+    <h3 class="govuk-heading-m">Letter templates</h3>
     <p class="govuk-body">Child Law Advice has a useful
       <%= govuk_link_to "letter template (PDF file - 234kb)", "https://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf" %>
       if you prefer to negotiate by letter or email.</p>
