@@ -74,7 +74,7 @@ RSpec.describe "Static pages" do
   it "shows the accessibility page" do
     get about_accessibility_path
     expect(response).to be_successful
-    expect(response.body).to include("About the accessibility of this online service")
+    expect(response.body).to include("This statement was last updated")
   end
 
   it "shows the privacy page" do
