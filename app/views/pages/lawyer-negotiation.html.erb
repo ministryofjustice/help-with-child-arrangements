@@ -1,4 +1,4 @@
-<div class="govuk-grid-row govuk-!-margin-bottom-8">
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
 
@@ -25,9 +25,9 @@
 
     <div class="pros_cons pros_cons--header">
       <div class="Pros">
-        <h4 class="pros_cons__heading pros_cons__heading--pros govuk-heading-s" aria-label="Pros of Lawyer negotiation">
+        <h3 class="pros_cons__heading pros_cons__heading--pros govuk-heading-m" aria-label="Pros of Lawyer negotiation">
           <span data-block-name="pros_cons__heading--pros">Pros</span>
-        </h4>
+        </h3>
         <ul class="pros_cons__list govuk-list pros_cons__list--pros">
           <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--pros">
             your lawyer supports you throughout
@@ -41,9 +41,9 @@
         </ul>
       </div>
       <div class="Cons">
-        <h4 class="pros_cons__heading pros_cons__heading--cons  govuk-heading-s" aria-label="Cons of Lawyer negotiation">
+        <h3 class="pros_cons__heading pros_cons__heading--cons  govuk-heading-m" aria-label="Cons of Lawyer negotiation">
           <span data-block-name="pros_cons__heading--cons">Cons</span>
-        </h4>
+        </h3>
         <ul class="pros_cons__list govuk-list pros_cons__list--cons">
           <li class="pros_cons__item govuk-list govuk-!-font-size-14 pros_cons__item--cons">
             can be a more expensive process
@@ -59,7 +59,7 @@
     </div>
   </div>
 </div>
-<div class="govuk-grid-column-two-thirds share_link govuk-!-margin-top-8">
+<div class="govuk-grid-column-two-thirds share_link govuk-!-margin-top-2">
   <%= govuk_link_to "Share this page by email", "mailto:?to=&body=Mmailto:?to=&body=You%20don%E2%80%99t%20have%20to%20deal%20directly%20with%20the%20other%20parent%20if%20you%20choose%20this%20option.%20You%20hire%20a%20lawyer%20to%20negotiate%20arrangements%20for%20you.%0D%0AYou%20can%20still%20hire%20a%20lawyer%20to%20negotiate%20on%20your%20behalf%20even%20if%20the%20other%20parent%20chooses%20not%20to%20use%20one.%0D%0A%0D%0AFind%20out%20more%20about%20lawyer%20negotiation%20on%20this%20page%3A%20https%3A%2F%2Fhelpwithchildarrangements.service.justice.gov.uk%2Flawyer-negotiation%3Futm_source%3Dshare&subject=I%20want%20to%20share%20this%20page%20about%20lawyer%20negotiation%20with%20you" %>
 </div>
 
@@ -100,7 +100,7 @@
       approval.</p>
 
     <p class="govuk-body">
-      <%= govuk_button_to "Find a lawyer", "https://solicitors.lawsociety.org.uk/" %>
+      <%= govuk_button_to "Find a lawyer (opens in new window)", "https://solicitors.lawsociety.org.uk/" %>
     </p>
   </div>
 

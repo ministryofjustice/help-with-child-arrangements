@@ -45,7 +45,7 @@
           <p class="summary_area__lede-additional govuk-body">Most children will feel more secure if
             they have regular contact with their parents and know where to get extra support if they need it. If they
             understand the situation you should involve them in the decision-making.</p>
-          <p class="summary_area__read-more">
+          <p>
             <%= govuk_link_to "Read more about putting your children first", involving_children_path %>
           </p>
         </div>
@@ -68,8 +68,6 @@
             </ul>
           </div>
         </aside>
-
-
       </article>
 
 
@@ -81,8 +79,7 @@
           <p class="govuk-body">It doesn't mean you have a right to spend
             time with your children (if you don't live with them), but the other parent must include you when making
             important decisions about their lives.</p>
-
-          <p class="summary_area__read-more">
+          <p>
             <%= govuk_link_to "Read more about your parental responsibility", parental_responsibility_path %>
           </p>
         </div>
@@ -112,7 +109,7 @@
           <p class="govuk-body">Emotional support can help you get through the stress of making child arrangements.</p>
           <p class="govuk-body">You're more likely to reach an agreement if you're emotionally ready and know where to
             get support if you need it.</p>
-          <p class="summary_area__read-more">
+          <p>
             <%= govuk_link_to "Read more about getting emotional support", emotional_support_path %>
           </p>
         </div>
@@ -163,7 +160,9 @@
               <li>Both parents</li>
             </ul>
           </div>
-
+          <p>
+            <%= govuk_link_to "Read more about negotiation tools and services", negotiating_between_parents_path %>
+          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -202,9 +201,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about negotiation tools and services", negotiating_between_parents_path %>
-        </p>
       </article>
 
 
@@ -235,6 +231,9 @@
               <li>Both parents</li>
               <li>Mediator</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about professional mediation", professional_mediation_path %>
+            </p>
           </div>
 
         </div>
@@ -280,9 +279,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about professional mediation", professional_mediation_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-lawyer_negotiation" data-slug="" data-block-name="route:lawyer_negotiation">
@@ -309,6 +305,9 @@
             <ul class="summary_area__involvement__list  govuk-list govuk-list--bullet">
               <li>Lawyer for each parent</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about lawyer negotiation", lawyer_negotiation_path %>
+            </p>
           </div>
         </div>
         <aside class="summary_area__aside">
@@ -347,9 +346,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about lawyer negotiation", lawyer_negotiation_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-collaborative_law" data-slug="" data-block-name="route:collaborative_law">
@@ -378,6 +374,9 @@
               <li>Both parents</li>
               <li>Lawyer for each parent</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about collaborative law", collaborative_law_path %>
+            </p>
           </div>
         </div>
         <aside class="summary_area__aside">
@@ -421,9 +420,6 @@
             </div>
           </div>
         </aside>
-        <p class="summary_area__read-more">
-          <%= govuk_link_to "Read more about collaborative law", collaborative_law_path %>
-        </p>
       </article>
 
       <article class="summary_area summary_area__Template-" id="card-single_lawyer" data-slug="" data-block-name="route:single_lawyer">
@@ -454,10 +450,10 @@
               <li>Both parents</li>
               <li>One lawyer for both parents</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about single lawyer model", single_lawyer_path %>
+            </p>
           </div>
-          <p class="summary_area__read-more">
-            <%= govuk_link_to "Read more about single lawyer model", single_lawyer_path %>
-          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -528,10 +524,10 @@
               <li>Lawyers (if applicable)</li>
               <li>Experts (if applicable)</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about arbitration", arbitration_path %>
+            </p>
           </div>
-          <p class="summary_area__read-more">
-            <%= govuk_link_to "Read more about arbitration", arbitration_path %>
-          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -598,10 +594,10 @@
               <li>Lawyer for each parent (optional)</li>
               <li>Judge</li>
             </ul>
+            <p>
+              <%= govuk_link_to "Read more about going to court", going_to_court_path %>
+            </p>
           </div>
-          <p class="summary_area__read-more">
-            <%= govuk_link_to "Read more about going to court", going_to_court_path %>
-          </p>
         </div>
         <aside class="summary_area__aside">
           <div class="pros_cons">
@@ -641,7 +637,6 @@
             </div>
           </div>
         </aside>
-
       </article>
     </section>
   </div>
