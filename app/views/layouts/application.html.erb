@@ -48,8 +48,6 @@
       <main class="govuk-main-wrapper" id="main-content" role="main">
         <div class="govuk-grid-row">
           <div class="govuk-grid-column-two-thirds">
-            <%= debug(@holding_page_text) %>
-            <%= debug(@holding_page_path) %>
             <%= govuk_notification_banner(title_text: "Important") do |link|
               link.with_heading(text: "This page is being replaced soon. ", link_text: @holding_page_text, link_href: @holding_page_path)
             end %>

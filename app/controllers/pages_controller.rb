@@ -12,12 +12,12 @@ class PagesController < ApplicationController
 
   def parental_responsibility
     @holding_page_path = "https://www.gov.uk/parental-rights-responsibilities"
-    @holding_page_text = "Find out about more about parental rights and responsibilities"
+    @holding_page_text = "Find out more about parental rights and responsibilities"
   end
 
   def emotional_support
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
-    @holding_page_text = "Find out about more about making child arrangements"
+    @holding_page_text = "Find out more about making child arrangements"
   end
 
   def negotiating_between_parents
@@ -37,22 +37,22 @@ class PagesController < ApplicationController
 
   def lawyer_negotiation
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
-    @holding_page_text = "Find out about more about making child arrangements"
+    @holding_page_text = "Find out more about making child arrangements"
   end
 
   def collaborative_law
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
-    @holding_page_text = "Find out about more about making child arrangements"
+    @holding_page_text = "Find out more about making child arrangements"
   end
 
   def single_lawyer
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
-    @holding_page_text = "Find out about more about making child arrangements"
+    @holding_page_text = "Find out more about making child arrangements"
   end
 
   def arbitration
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
-    @holding_page_text = "Find out about more about making child arrangements"
+    @holding_page_text = "Find out more about making child arrangements"
   end
 
   def going_to_court
@@ -64,6 +64,4 @@ class PagesController < ApplicationController
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce/apply-for-court-order"
     @holding_page_text = "Find out how to apply for court order"
   end
-
-
 end
