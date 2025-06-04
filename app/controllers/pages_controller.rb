@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   attr_accessor :holding_page_path, :holding_page_text
+
   def homepage
     @holding_page_path = "https://www.gov.uk/looking-after-children-divorce"
     @holding_page_text = "Find out more about making child arrangements"
