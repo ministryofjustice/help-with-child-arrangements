@@ -46,16 +46,7 @@
       <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t("#{controller_name}.#{action_name}.title") => false }) unless action_name == "homepage" %>
 
       <main class="govuk-main-wrapper" id="main-content" role="main">
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
-            <%= if I18n.exists?("pages.#{action_name}.holding_page_text") && t("pages.#{action_name}.holding_page_text").present?
-                  govuk_notification_banner(title_text: "Important") do |link|
-                    link.with_heading(text: "This page is being replaced soon. ", link_text: t("pages.#{action_name}.holding_page_text"), link_href: t("pages.#{action_name}.holding_page_path"))
-                  end
-                end
-            %>
-          </div>
-        </div>
+        <%= render "shared/banner" %>
         <%= yield %>
       </main>
     </div>
