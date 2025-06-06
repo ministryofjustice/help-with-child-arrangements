@@ -46,7 +46,7 @@
       <%= govuk_breadcrumbs(breadcrumbs: { "Home" => "/", t("#{controller_name}.#{action_name}.title") => false }) unless action_name == "homepage" %>
 
       <main class="govuk-main-wrapper" id="main-content" role="main">
-        <%= render "shared/banner" %>
+        <%= render "shared/banner", action: action_name %>
         <%= yield %>
       </main>
     </div>

@@ -46,10 +46,16 @@ en:
     going-to-court:
       holding_page_path: https://www.gov.uk/looking-after-children-divorce/apply-for-court-order"
       holding_page_text: Find out how to apply for court order
+    going-to-court-other-parent:
+      holding_page_path: https://www.gov.uk/looking-after-children-divorce/apply-for-court-order"
+      holding_page_text: Find out how to apply for court order
     negotiating-between-parents:
       holding_page_path: https://www.gov.uk/looking-after-children-divorce/if-you-agree
       holding_page_text: Get information on making a parenting plan
     professional-mediation:
+      holding_page_path: https://www.gov.uk/looking-after-children-divorce/mediation
+      holding_page_text: Find out how to use mediation to make an agreement without going to court
+    professional-mediation-other-parent:
       holding_page_path: https://www.gov.uk/looking-after-children-divorce/mediation
       holding_page_text: Find out how to use mediation to make an agreement without going to court
     parental-responsibility:
