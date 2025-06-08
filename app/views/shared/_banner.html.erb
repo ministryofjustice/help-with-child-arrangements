@@ -2,13 +2,13 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <%= govuk_notification_banner(title_text: "Important") do %>
-        <% link_text = if I18n.exists?("holding_page.#{action_name}.holding_page_text") && t("holding_page.#{action_name}.holding_page_text").present?
-                         t("holding_page.#{action_name}.holding_page_text")
+        <% link_text = if I18n.exists?("holding_page.#{action}.holding_page_text") && t("holding_page.#{action}.holding_page_text").present?
+                         t("holding_page.#{action}.holding_page_text")
                        else
                          t("holding_page.holding_page_text")
                        end %>
-        <% link_href = if I18n.exists?("holding_page.#{action_name}.holding_page_path") && t("holding_page.#{action_name}.holding_page_path").present?
-                         t("holding_page.#{action_name}.holding_page_path")
+        <% link_href = if I18n.exists?("holding_page.#{action}.holding_page_path") && t("holding_page.#{action}.holding_page_path").present?
+                         t("holding_page.#{action}.holding_page_path")
                        else
                          t("holding_page.holding_page_path")
                        end %>
