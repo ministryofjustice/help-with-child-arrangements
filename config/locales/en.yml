@@ -13,7 +13,6 @@ en:
       title: Terms and conditions
 
   pages:
-    homepage:
     arbitration:
       title: Arbitration
     collaborative-law:
@@ -39,25 +38,15 @@ en:
     single-lawyer:
       title: Single lawyer model
 
-  holding_page:
+  banner:
     pre_text: This page is being replaced soon.
-    holding_page_text: Find out more about making child arrangements
-    holding_page_path: https://www.gov.uk/looking-after-children-divorce
-    going-to-court:
-      holding_page_path: https://www.gov.uk/looking-after-children-divorce/apply-for-court-order"
-      holding_page_text: Find out how to apply for court order
-    going-to-court-other-parent:
-      holding_page_path: https://www.gov.uk/looking-after-children-divorce/apply-for-court-order"
-      holding_page_text: Find out how to apply for court order
-    negotiating-between-parents:
-      holding_page_path: https://www.gov.uk/looking-after-children-divorce/if-you-agree
-      holding_page_text: Get information on making a parenting plan
-    professional-mediation:
-      holding_page_path: https://www.gov.uk/looking-after-children-divorce/mediation
-      holding_page_text: Find out how to use mediation to make an agreement without going to court
-    professional-mediation-other-parent:
-      holding_page_path: https://www.gov.uk/looking-after-children-divorce/mediation
-      holding_page_text: Find out how to use mediation to make an agreement without going to court
-    parental-responsibility:
-      holding_page_path: https://www.gov.uk/parental-rights-responsibilities
-      holding_page_text: Find out more about parental rights and responsibilities
+    default_path: https://www.gov.uk/looking-after-children-divorce
+    default_text: Find out more about making child arrangements
+    court_path: https://www.gov.uk/looking-after-children-divorce/apply-for-court-order
+    court_text: Find out how to apply for court order
+    negotiation_path: https://www.gov.uk/looking-after-children-divorce/if-you-agree
+    negotiation_text: Get information on making a parenting plan
+    mediation_path: https://www.gov.uk/looking-after-children-divorce/mediation
+    mediation_text: Find out how to use mediation to make an agreement without going to court
+    rights_path: https://www.gov.uk/parental-rights-responsibilities
+    rights_text: Find out more about parental rights and responsibilities
