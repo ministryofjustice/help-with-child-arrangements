@@ -1,120 +1,17 @@
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <%= render "shared/banner", type: "default" %>
+  <div class="govuk-grid-column-full">
 
-    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
+    <h1 class="govuk-heading-xl">
+      <%= t(".title") %>
+    </h1>
 
-    <p class="govuk-body-lead">The needs of your children should come first when you make child arrangements with the
-      other parent.</p>
-    <p class="govuk-body">Most children will feel more secure if they have regular contact with their parents, if it's
-      safe to do so. If they understand the situation you should involve them in the decision-making.</p>
-    <p class="govuk-body">Separating from your partner can be a stressful
-      experience. It can often be a highly emotional time, and there may be instances of conflict.</p>
-    <p class="govuk-body">While you may be doing your best to protect your children
-      from the impact of separation, children will often pick up on negative feelings. It can be difficult to put
-      aside your emotions and listen to your children's thoughts and feelings but understanding them will help
-      you put your children's needs first.</p>
-    <p class="govuk-body">Cafcass
-      <%= govuk_link_to "Supporting your child through divorce and separation", "https://www.cafcass.gov.uk/parent-carer-or-family-member/applications-child-arrangements-order/resources-help-you-make-arrangements-are-your-childs-best-interests/supporting-your-child-through-divorce-and-separation" %>
-      offers tips for listening to your child's voice and
-      coping with your own feelings.</p>
-    <p class="govuk-body">The Family Justice Young People's Board has developed
-      <%= govuk_link_to "top tips for separated parents", "https://www.cafcass.gov.uk/family-justice-young-peoples-board/" %>
-      based on their experiences.</p>
-    <section id="involving-children-involving" class="SectionArea govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-      <h2 class="govuk-heading-l">Involving your children</h2>
-      <p class="govuk-body">Children are more likely to adapt to new arrangements if you involve them in decisions. If
-        they understand the situation, make sure to include them whenever possible.</p>
-      <p class="govuk-body">You should try and make your arrangements flexible so you can take into account the changing
-        needs of your children as they grow older.</p>
-      <p class="govuk-body">Child Inclusive Mediation gives children the opportunity to discuss their wishes and feelings
-        with a trained mediator. The aim is to allow children to have their views heard and is not about asking your child
-        to make choices. It is a voluntary process, and both parents and the child would need to agree to a meeting with
-        the mediator.</p>
-      <p class="govuk-body">The Family Mediation Council provides information on Child Inclusive Mediation for children
-        <%= govuk_link_to "Mediation Is Not Only for Adults! - Family Mediation Council", "https://www.familymediationcouncil.org.uk/mediation-isnt-only-for-the-adults/" %>
-      </p>
-      <p class="govuk-body">The Family Mediation Association offers further information for parents
-        <%= govuk_link_to "Child Inclusive Mediation - The Family Mediators Association (thefma.co.uk)", "https://thefma.co.uk/about-family-mediation/direct-consultation-with-children/" %>
-      </p>
-      <p class="govuk-body">
-        <%= govuk_link_to "Supporting your child through divorce and separation", "https://www.cafcass.gov.uk/parent-carer-or-family-member/applications-child-arrangements-order/resources-help-you-make-arrangements-are-your-childs-best-interests/supporting-your-child-through-divorce-and-separation" %>
-      </p>
-    </section>
+    <p class="govuk-body">
+      This site has been replaced by:
+    </p>
 
-    <section id="involving-children-seeing" class="SectionArea govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-      <h2 class="govuk-heading-l">Seeing your children</h2>
-      <p class="govuk-body">Your children will cope better with their situation if they have regular contact with you
-        and the other parent, if it's safe to do so.</p>
+    <p class="govuk-body">
+      <%= govuk_link_to "Find out about more about making child arrangements", "https://www.gov.uk/looking-after-children-divorce" %>.
+    </p>
 
-      <p class="govuk-body">
-        <%= govuk_link_to "Research shows", "https://click.clickrelationships.org/content/parenting-apart/two-parents-two-homes" %> most
-        children think the parent who doesn't live with them is still an important part of their family.</p>
-
-      <p class="govuk-body">You can use a <%= govuk_link_to "child contact centre", "https://naccc.org.uk/" %> if you
-        don't live with your children and can't find somewhere to see them. There are around 350 across England and
-        Wales.
-      </p>
-
-      <p class="govuk-body"><strong>If you're being prevented from seeing your children</strong></p>
-      <p class="govuk-body">You can write a letter to the other parent if they're stopping you seeing your children.</p>
-
-      <p class="govuk-body">In the letter you should ask for regular contact, suggesting possible days or times. If they
-        refuse, ask whether they would consider
-        <%= govuk_link_to "mediation", professional_mediation_path %>
-        to resolve the issue.</p>
-
-      <p class="govuk-body">Don't forget to send your letter by recorded delivery so you know the other parent has
-        received it.</p>
-    </section>
-
-    <section id="involving-children-supporting" class="SectionArea govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-      <h2 class="govuk-heading-l">Supporting your children</h2>
-      <p class="govuk-body">Your children may need extra support if they're finding it hard to cope.</p>
-
-      <h3 class="govuk-heading-m">Counselling</h3>
-      <p class="govuk-body">Many schools provide support but some children might need further help from a
-        <%= govuk_link_to "counsellor", "https://www.counselling-directory.org.uk/childrelatedissues.html" %>. The type
-        of counselling varies depending on the child's age and if they have learning difficulties.</p>
-
-      <h3 class="govuk-heading-m">Support online</h3>
-      <p class="govuk-body"><%= govuk_link_to "Voices in the Middle", "https://www.voicesinthemiddle.com/" %> is a
-        website that has advice from young people in a similar situation. There's a guide to further help if your
-        children want it.</p>
-      <p class="govuk-body">Cafcass offers <%= govuk_link_to "resources for young people", "https://www.cafcass.gov.uk/young-people/"%>
-      whose parents are separating.</p>
-      <p class="govuk-body">Cafcass Cymru offers information packs for
-        <%= govuk_link_to "children", "https://www.gov.wales/separating-parents-information-pack-children"%> and
-        <%= govuk_link_to "young people", "https://www.gov.wales/separating-parents-information-pack-young-people"%>
-      .</p>
-      <p class="govuk-body">ChildLine offers <%= govuk_link_to "advice about dealing with divorce or separation.",
-      "https://www.childline.org.uk/info-advice/home-families/family-relationships/divorce-separation/"%>
-      </p>
-    </section>
-
-    <section id="involving-children-protecting" class="SectionArea govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-      <h2 class="govuk-heading-l">
-        Protecting you and your children
-      </h2>
-      <p class="govuk-body">In some situations it may not be in the child's best interests for parents to work out child
-        arrangements. You'll probably need
-        to <%= govuk_link_to "go to court", going_to_court_path %>
-        if you're worried about the welfare of you or your children.
-      </p>
-      <p class="govuk-body">You should
-        <%= govuk_link_to "report child abuse", "https://www.gov.uk/report-child-abuse" %> or
-        <%= govuk_link_to "domestic abuse", "http://www.nhs.uk/live-well/getting-help-for-domestic-violence/" %>
-        if you have any concerns.
-      </p>
-      <p class="govuk-body">Read more about the
-        <%= govuk_link_to "signs of child abuse", "https://www.nspcc.org.uk/what-is-child-abuse/types-of-abuse/" %> and
-        <%= govuk_link_to "domestic abuse", "http://www.nhs.uk/live-well/getting-help-for-domestic-violence/" %>.
-      </p>
-    </section>
   </div>
 </div>
-
-<%= render "shared/prepare_links", links: [
-  govuk_link_to(t("pages.parental-responsibility.title"), parental_responsibility_path),
-  govuk_link_to(t("pages.emotional-support.title"), emotional_support_path)]
-%>
