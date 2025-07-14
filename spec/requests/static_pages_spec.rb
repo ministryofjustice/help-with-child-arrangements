@@ -3,7 +3,7 @@ RSpec.describe "Static pages" do
     get root_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -11,7 +11,7 @@ RSpec.describe "Static pages" do
     get arbitration_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -19,7 +19,7 @@ RSpec.describe "Static pages" do
     get collaborative_law_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -27,7 +27,7 @@ RSpec.describe "Static pages" do
     get emotional_support_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -42,7 +42,7 @@ RSpec.describe "Static pages" do
     get going_to_court_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -50,7 +50,7 @@ RSpec.describe "Static pages" do
     get involving_children_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -58,7 +58,7 @@ RSpec.describe "Static pages" do
     get lawyer_negotiation_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -66,7 +66,7 @@ RSpec.describe "Static pages" do
     get negotiating_between_parents_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -74,7 +74,7 @@ RSpec.describe "Static pages" do
     get parental_responsibility_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -82,7 +82,7 @@ RSpec.describe "Static pages" do
     get professional_mediation_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -90,7 +90,7 @@ RSpec.describe "Static pages" do
     get professional_mediation_other_parent_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
@@ -98,7 +98,7 @@ RSpec.describe "Static pages" do
     get single_lawyer_path
     expect(response).to be_successful
     expect(response.body).to include("Get help with child arrangements")
-    expect(response.body).to include("This site has been replaced by:")
+    expect(response.body).to include("This page has been replaced.")
     expect(response.body).to include("https://www.gov.uk/looking-after-children-divorce")
   end
 
