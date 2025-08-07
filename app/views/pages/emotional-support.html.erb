@@ -1,138 +1,17 @@
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
-
-    <p class="govuk-body-lead">Emotional support can help you get through the stress of making child arrangements.</p>
-    <p class="govuk-body">You're more likely to reach an agreement if you're emotionally ready and know where to get
-      support if you need it.</p>
-
-    <section id="emotional-support-peers" class="SectionArea">
-      <h2 class="govuk-heading-l">Peer support</h2>
-      <p class="govuk-body">Your family and friends are likely to be the greatest source of support.</p>
-      <p class="govuk-body">You can also try using online forums or attending group meetings to speak with people who
-        have been through a similar experience.</p>
-
-      <section id="emotional-support-online" class="SectionArea">
-        <h3 class="govuk-heading-m govuk-!-margin-bottom-0">Use online forums</h3>
-        <p class="govuk-body">Online forums allow you to share your story, tell people how you're feeling and discuss
-          any concerns you have.</p>
-        <p class="govuk-body">Exchange experiences and get support from others by posting a question or sharing your story.</p>
-        <p class="govuk-body">The following are examples of helpful forums:</p>
-
-        <ul class="govuk-list govuk-list--bullet">
-          <li><%= govuk_link_to "Click", "https://click.clickrelationships.org/home/parenting-apart/" %></li>
-          <li><%= govuk_link_to "Dad.info", "https://www.dad.info/forum/index" %></li>
-          <li><%= govuk_link_to "Mumsnet", "https://www.mumsnet.com/Talk" %></li>
-          <li><%= govuk_link_to "Wikivorce", "https://divorce.wikivorce.com/" %></li>
-          <li><%= govuk_link_to "Gingerbread", "https://www.gingerbread.org.uk/" %></li>
-        </ul>
-      </section>
-
-      <section id="emotional-support-offline" class="SectionArea">
-        <h3 class="govuk-heading-m govuk-!-margin-bottom-0">Find a group near you</h3>
-        <p class="govuk-body">Look for a
-          <%= govuk_link_to "family meet-up group", "https://www.meetup.com/find/?keywords=parents-family&location=gb--London&source=EVENTS" %> or
-          <%= govuk_link_to "single parents network", "https://www.meetup.com/find/?allMeetups=false&keywords=single+parent+support&radius=50&userFreeform=London%2C+United+Kingdom&mcId=z1012717&mcName=London%2C+England%2C+GB&sort=default&eventFilter=mysugg" %>
-          in your area. Both work in the same way as forums but the focus is usually on meeting face to face.</p>
-      </section>
-    </section>
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <section id="emotional-support-professional" class="SectionArea govuk-!-margin-top-5 govuk-!-margin-bottom-5">
-      <h2 class="SectionArea__heading govuk-heading-l moj-Section">Professional advice</h2>
-      <p class="govuk-body moj-Section">
-        You should consider professional advice (for example seeing a counsellor or attending meetings) if you feel
-        you're struggling to cope.
-      </p>
-    </section>
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <section id="emotional-support-counselling" class="SectionArea">
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-3">
-      <h3 class="govuk-heading-m govuk-!-margin-bottom-0">Counselling</h3>
-      <p class="govuk-body">A professional counsellor can help you understand issues such as:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>how to reduce emotional stress</li>
-        <li>the effect disputes have on your children</li>
-        <li>why your relationship with the other parent ended</li>
-      </ul>
-      <p class="govuk-body"><%= govuk_link_to "Contact the Samaritans", "https://www.samaritans.org/how-we-can-help-you/contact-us" %>
-        if you need to speak to someone urgently.</p>
-      <p class="govuk-body">
-        <%= govuk_button_to "Find a counsellor (opens in new window)", "https://www.counselling-directory.org.uk/adv-search.html" %>
-      </p>
-    </div>
-
-    <div class="cost govuk-grid-column-one-third govuk-!-margin-top-4">
-      <h3 class="cost__heading govuk-heading-m">Average cost of a counsellor</h3>
-      <p class="cost__amount govuk-heading-l"><strong>&pound;35 - &pound;60</strong></p>
-      <p class="govuk-body-xs">Cost based on a 50-minute session. Fees may vary depending on your location and the
-        experience of the counsellor. Some counsellors offer reductions if you're unemployed or on a low income.</p>
-    </div>
-
-  </section>
-
-  <section id="emotional-support-spip" class="SectionArea">
-    <div class="govuk-grid-column-two-thirds govuk-!-margin-top-3">
-      <h3 class="govuk-heading-m govuk-!-margin-bottom-0">Parenting advice</h3>
-      <p class="govuk-body">
-        The <%= govuk_link_to "Planning Together for Children", "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/help-planning-together-children" %> course in England and the
-        <%= govuk_link_to "Working Together for Children", "https://www.gov.wales/sites/default/files/publications/2023-01/working-together-for-children-wt4c-factsheet.pdf" %> programme in Wales
-        helps you understand how to put your children first and reduce the harmful effects of parental conflict.
-      </p>
-
-      <p class="govuk-body">
-        A judge may direct you to complete Planning Together for Children or Working Together for Children if you take your case to court.
-        A Cafcass family court adviser can also make a request for you to attend.
-        You won't go to the same group as the other parent.
-        There is no cost to you for taking part.
-      </p>
-      <p class="govuk-body">There is a  similar programme in <%= govuk_link_to "Scotland", "http://relationships-scotland.org.uk/" %>.</p>
-    </div>
-  </section>
-</div>
-
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    <section id="emotional-support-readiness" class="SectionArea govuk-!-margin-top-5 govuk-!-margin-bottom-5">
-      <h2 class="govuk-heading-l">Emotional readiness</h2>
-      <p class="govuk-body">Emotional readiness is being able to put aside your own feelings and any negative thoughts
-        about the other parent. If you're emotionally ready you'll have a better chance of making an agreement that's in
-        the best interests of your children.</p>
-      <p class="govuk-body">The Children and Family Court Advisory and Support Service (Cafcass) has more information on
-        what you need to do
-        to <%= govuk_link_to "become emotionally ready", "https://www.cafcass.gov.uk/parent-carer-or-family-member/applications-child-arrangements-order/resources-help-you-make-arrangements-are-your-childs-best-interests/supporting-your-child-through-divorce-and-separation" %>
-        .</p>
-    </section>
-  </div>
-</div>
-
-<section class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <nav class="area_links govuk-!-margin-top-6" data-block-name="preparing-collection">
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds govuk-!-margin-top-6">
-          <section id="emotional-support-resources" class="ResourcesSection govuk-!-margin-bottom-8">
-            <h2 class="govuk-heading-l">Getting emotional support resources</h2>
-            <p class="govuk-body"><%= govuk_link_to "Find out more about counselling", "https://www.counselling-directory.org.uk/separation.html" %></p>
-            <p class="govuk-body">Relate has a <%= govuk_link_to "30 minute telephone call service", "https://www.relate.org.uk/get-help/which-service-right-you/chat-us" %> that costs &pound;30.</p>
 
-            <p class="govuk-body">Relate also offers an <%= govuk_link_to "email service", "https://www.relate.org.uk/get-help/which-service-right-you/message-counsellor" %> that is equivalent to one hour of counselling. It costs &pound;45 per session. </p>
-          </section>
-        </div>
-      </div>
-    </nav>
+    <h1 class="govuk-heading-xl">
+      <%= t(".title") %>
+    </h1>
+
+    <p class="govuk-body">
+      This page has been replaced.
+    </p>
+
+    <p class="govuk-body">
+      <%= govuk_link_to "Find out about more about making child arrangements", "https://www.gov.uk/looking-after-children-divorce" %>.
+    </p>
+
   </div>
-</section>
-
-<%= render "shared/prepare_links", links: [
-  govuk_link_to(t("pages.involving-children.title"), involving_children_path),
-  govuk_link_to(t("pages.parental-responsibility.title"), parental_responsibility_path)]
-%>
+</div>
