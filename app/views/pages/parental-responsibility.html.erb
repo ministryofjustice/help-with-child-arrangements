@@ -1,47 +1,17 @@
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-    <%= render "shared/banner", type: "rights" %>
+  <div class="govuk-grid-column-full">
 
-    <h1 class="govuk-heading-xl"><%= t(".title") %></h1>
+    <h1 class="govuk-heading-xl">
+      <%= t(".title") %>
+    </h1>
 
-    <p class="govuk-body-lead">Parental responsibility is a term that means you have legal rights and duties relating to
-      your children's upbringing.</p>
-    <p class="govuk-body">It doesn't mean you have a right to spend time with your children (if you don't live with
-      them), but the other parent must include you when making important decisions about their lives.</p>
-    <p class="govuk-body">You're also responsible for issues such as:</p>
+    <p class="govuk-body">
+      This page has been replaced.
+    </p>
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>where they go to school</li>
-      <li>how to discipline them</li>
-      <li>agreeing to their medical treatment</li>
-      <li>choosing, registering or changing their names</li>
-    </ul>
-    <p class="govuk-body">All mothers automatically have parental responsibility. A father usually does if he's either
-      married to the child's mother or listed on the birth certificate.</p>
-    <p class="govuk-body">Find out more
-      about <%= govuk_link_to "who has parental responsibility", "https://www.gov.uk/parental-rights-responsibilities/who-has-parental-responsibility" %>
-      .</p>
-    <p class="govuk-body">You
-      can <%= govuk_link_to "apply for parental responsibility", "https://www.gov.uk/parental-rights-responsibilities/apply-for-parental-responsibility" %>
-      if you don't automatically have it.</p>
-    <p class="govuk-body"><%= govuk_inset_text(text: "You must provide financial support for your children even if you don't have parental responsibility.") %></p>
-    <p class="govuk-body"><%= govuk_link_to "Arrange child maintenance yourself", "https://www.gov.uk/making-child-maintenance-arrangement/arrange-child-maintenance-yourself" %></p>
+    <p class="govuk-body">
+      <%= govuk_link_to "Find out about more about making child arrangements", "https://www.gov.uk/looking-after-children-divorce" %>.
+    </p>
 
-    <section id="parental-responsibility-decisions" class="SectionArea govuk-!-margin-top-8 govuk-!-margin-bottom-8">
-      <h2 class="govuk-heading-l">Making decisions with the other parent</h2>
-      <p class="govuk-body">You don't always need to get the consent of the other parent for routine decisions, even if
-        they also have parental responsibility.</p>
-      <p class="govuk-body">If it's a major decision (for example one of you wants to move abroad with your children)
-        both parents with responsibility must agree in writing.</p>
-      <p class="govuk-body"> You can apply for
-        a <%= govuk_link_to "Specific Issue Order", "https://www.compactlaw.co.uk/free-legal-information/children/specific-issue-order.html" %>
-        or <%= govuk_link_to "Prohibited Steps Order", "https://www.lawandparents.co.uk/prohibited-steps-orders-effect-parents.html" %>
-        if you can't agree. A judge will then make a decision which is in your children's best interests.</p>
-    </section>
   </div>
 </div>
-
-<%= render "shared/prepare_links", links: [
-  govuk_link_to(t("pages.involving-children.title"), involving_children_path),
-  govuk_link_to(t("pages.emotional-support.title"), emotional_support_path)]
-%>
