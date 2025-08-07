@@ -21,9 +21,9 @@
     }
   },
   "dependencies": {
-    "esbuild": "^0.25.5",
+    "esbuild": "^0.25.8",
     "govuk-frontend": "^5.10.1",
-    "sass": "^1.89.0"
+    "sass": "^1.89.2"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
